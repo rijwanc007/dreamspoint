@@ -64,7 +64,7 @@
                                     <input type="number" class="form-control" name="product_qty[]" value="{{$product['quantity']}}" min="1">
                                 </div>
                                 <div class="product-removal"><button class="remove-product" onclick="window.location='{{route('remove_product', [$id])}}'">Remove</button></div>
-                                <div class="product-line-price">{{$total}}</div>
+                                <div class="product-line-price">{{$sub_total}}</div>
                                 <input type="hidden" name="product_price[]" value="{{$product['price']}}"/>
                             </div>
                         @endforeach
