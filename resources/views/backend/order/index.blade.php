@@ -14,7 +14,7 @@
                                     <th>Date</th>
                                     <th>Customer Name</th>
                                     <th>Email</th>
-                                    <th>Products</th>
+                                    <th>Product Details</th>
                                     <th>Sub-Total</th>
                                     <th>Status</th>
                                     <th>Option</th>
@@ -28,9 +28,24 @@
                                         <td>{{$order->customer_name}}</td>
                                         <td>{{$order->customer_email}}</td>
                                         <td>
-                                            @foreach(json_decode($order->product_name) as $product)
-                                                [ {{$product}} ]
-                                            @endforeach
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>Item</th>
+                                                    <th>Qty</th>
+                                                    <th>Unit Price</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                @for($i = 0 ; $i< count(json_decode($order->product_name)) ;$i++)
+                                                    <tr>
+                                                        <td>{{json_decode($order->product_name)[$i]}}</td>
+                                                        <td>{{json_decode($order->product_qty)[$i]}}</td>
+                                                        <td>{{json_decode($order->product_price)[$i]}}</td>
+                                                    </tr>
+                                                @endfor
+                                                </tbody>
+                                            </table>
                                         </td>
                                         <td>{{$order->product_sub_total}} /-</td>
                                         <td>{{$order->status}}</td>
