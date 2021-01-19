@@ -28,11 +28,10 @@
                 </nav>
             </div>
         </div>
-        <br/><br/><br/><br/>
         @if(!empty(session('cart')))
         <div class="container-fluid">
             {!! Form::open(['id' =>'multiphase','class' =>'form-sample','route' => 'cart.store','method' => 'POST']) !!}
-            <div id="phase1">
+            <div id="phase1" class="phase_one">
                 <div class="shopping-cart">
                     <div class="column-labels">
                         <label class="product-image">Image</label>
@@ -89,12 +88,13 @@
                 </div>
             </div>
             <div id="phase2" style="display: none">
+                <h3 class="text-center">Please Fill Out the Form to Proceed</h3>
                 <div class="row" style="background-color: #2B2A2F; border-radius: 10px">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="page-title text-center">Please Fill Out the Form to Proceed</h3>
+                                <h3 class="page-title text-center"></h3>
                             </div>
                             <div class="card-body">
                                 <h2 class="text-info text-center">Cash On Delivery</h2>
@@ -129,7 +129,7 @@
         </div>
         <br/><br/>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped" style="min-width: 20px;">0%</div>
+            <div class="progress-bar progress-bar-info" style="min-width: 20px;">0%</div>
         </div>
         @else
         <div class="container-fluid">

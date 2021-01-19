@@ -44,8 +44,7 @@
 }
 .title {
     position: absolute;
-    width: 500px;
-    left: 50px;
+    width: 100%;
     top: 188px;
     font-weight: 700;
     font-size: 30px;
@@ -57,8 +56,7 @@
 }
 .title1 {
     position: absolute;
-    width: 500px;
-    left: 74px;
+    width: 100%;
     top: 388px;
     font-weight: 700;
     font-size: 30px;
@@ -78,18 +76,20 @@
 
 .button {
     position: absolute;
-    width: 500px;
-    left:200px;
-    top: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
 }
 .men_button {
     position: absolute;
-    width: 500px;
-    left: 226px;
-    top: 375px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
@@ -129,12 +129,11 @@
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 76px) {
 
     .title {
         position: absolute;
-        width: 250px;
-        left: 65px;
+        width:100%;
         top: 120px;
         font-weight: 700;
         font-size: 30px;
@@ -146,8 +145,7 @@
     }
     .title1 {
         position: absolute;
-        width: 250px;
-        left: 65px;
+        width:100%;
         top: 200px;
         font-weight: 700;
         font-size: 30px;
@@ -159,18 +157,20 @@
     }
     .button {
         position: absolute;
-        width: 250px;
-        left:65px;
-        top: 180px;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         text-align: center;
         opacity: 0;
         transition: opacity .35s ease;
     }
     .men_button {
         position: absolute;
-        width: 250px;
-        left:65px;
-        top: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         text-align: center;
         opacity: 0;
         transition: opacity .35s ease;
@@ -193,12 +193,6 @@
     }
 }
 @media only screen and (max-width: 568px){
-    .title {
-        left: 75px;
-    }
-    .title1 {
-        left: 75px;
-    }
     .button a {
         width: 255px;
     }
@@ -212,12 +206,6 @@
     }
 }
 @media only screen and (min-width: 360px) and (max-width: 375px){
-    .title {
-        left: 57px;
-    }
-    .title1 {
-        left: 57px;
-    }
     .button a {
         width: 255px;
     }
@@ -250,12 +238,6 @@
     }
 }
 @media only screen and (max-width: 320px){
-    .title {
-        left: 40px;
-    }
-    .title1 {
-        left: 40px;
-    }
     .button a {
         width: 200px;
     }

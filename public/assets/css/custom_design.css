@@ -433,7 +433,6 @@ p a:active {
 
 p a:hover {
     color: #FFFFFF;
-    /*background: #ffa07f*/
 }
 
 p a:hover::after {
@@ -575,7 +574,6 @@ section {
 
 .button {
     display: inline-block;
-    /*background: #0e8ce4;*/
     border-radius: 5px;
     height: 48px;
     -webkit-transition: all 200ms ease;
@@ -625,16 +623,13 @@ section {
 .viewed {
     padding-top: 51px;
     padding-bottom: 60px;
-    /*background: #eff6fa*/
 }
 .bbb_viewed_title {
     margin-bottom: 14px
 }
 
 .bbb_viewed_nav_container {
-    /*position: absolute;*/
     right: -5px;
-    /*bottom: 14px;*/
     padding: 10px;
 }
 
@@ -671,7 +666,6 @@ section {
     background: #FFFFFF;
     border-radius: 2px;
     padding-top: 25px;
-    /*padding-bottom: 25px;*/
     padding-left: 30px;
     padding-right: 30px
 }
@@ -929,7 +923,6 @@ section {
 
 
 #product_img{
-    /*width: 262.5px;*/
     height: 263px;
 }
 
@@ -1222,10 +1215,6 @@ section {
         display: flex;
         margin-top: 80px;
     }
-    /*.mobile_view{*/
-    /*    margin-left: 20px;*/
-    /*    margin-top: 0px;*/
-    /*}*/
     .hotdeal{
         height: 250px;
     }
@@ -1251,9 +1240,6 @@ section {
     .wid-title{
         margin-top: 10px;
     }
-    /*.subscribe{*/
-    /*    margin-top: 300px;*/
-    /*}*/
     #home-slider .item img{
         height: 169px;
     }
@@ -1261,7 +1247,7 @@ section {
         padding: 10px;
     }
     .footer-widget{
-        margin-top: -100px;
+        margin-top: 0px;
     }
     .customer_review {
         margin-top: 0px;

@@ -8,7 +8,7 @@
 }
 .product-price {
     float: left;
-    width: 12%;
+    width: 8%;
 }
 .product-quantity {
     float: left;
@@ -36,14 +36,6 @@
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
     content: '$';
 }
-/*body {*/
-/*    padding: 0px 30px 30px 20px;*/
-/*    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-/*    font-weight: 100;*/
-/*}*/
-/*h1 {*/
-/*    font-weight: 100;*/
-/*}*/
 label {
     color: #aaa;
 }
@@ -61,7 +53,7 @@ label {
 .product {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px dotted #73D2E6;
 }
 .product .product-image {
     text-align: center;
@@ -82,7 +74,7 @@ label {
 }
 .product .remove-product {
     border: 0;
-    padding: 4px 8px;
+    padding: 6px 8px;
     background-color: #c66;
     color: #fff;
     font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
@@ -125,6 +117,9 @@ label {
 .checkout:hover {
     background-color: #17ACE2;
 }
+.phase_one{
+    margin-top: 70px;
+}
 @media screen and (max-width: 650px) {
     .shopping-cart {
         margin: 0;
@@ -139,7 +134,7 @@ label {
         width: auto;
     }
     .product-image img {
-        margin: 0 0 10px 10px;
+        margin: -5px 0 20px 0px;
     }
     .product-details {
         float: none;
@@ -156,34 +151,53 @@ label {
     .product-quantity input {
         margin-left: 20px;
     }
-    .product-quantity:before {
-        content: 'x';
-    }
     .product-removal {
         width: auto;
     }
     .product-line-price {
         float: right;
         width: 70px;
+        margin-top: 5px;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .product-removal {
-        float: right;
+        width: auto;
     }
     .product-line-price {
         float: right;
         clear: left;
         width: auto;
-        margin-top: 10px;
-    }
-    .product .product-line-price:before {
-        content: 'Item Total: $';
+        margin-top: -26px;
     }
     .totals .totals-item label {
         width: 60%;
     }
     .totals .totals-item .totals-value {
         width: 40%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .product-removal {
+        width: auto;
+        margin-left: -33px;
+    }
+    .product .product-quantity input {
+        width: 32px;
+    }
+    .product-quantity input {
+        margin-left: 0px;
+    }
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: -26px;
+    }
+    .totals .totals-item label {
+        width: 30%;
+    }
+    .totals .totals-item .totals-value {
+        width: 20%;
     }
 }
