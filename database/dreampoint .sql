@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2021 at 12:09 PM
+-- Generation Time: Jan 28, 2021 at 11:48 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -199,6 +199,7 @@ CREATE TABLE `orders` (
   `product_qty` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `product_price` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `product_sub_total` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `delivery` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `customer_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `customer_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -212,15 +213,20 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `product_name`, `product_qty`, `product_price`, `product_sub_total`, `status`, `customer_name`, `customer_phone`, `customer_email`, `customer_address`, `created_at`, `updated_at`) VALUES
-(1, '[\"Headphone\",\"Pendrive 64 GB\",\"Gaming Mouse\"]', '[\"1\",\"2\",\"2\"]', '[\"2375\",\"522\",\"1620\"]', '6659.00', 'delivered', 'Mehedy Hassan', '01758945236', 'mehedy@gmail.com', 'Bashundhara Dhaka Bangladesh', '2021-01-17 06:37:59', '2021-01-18 00:47:11'),
-(10, '[\"Pendrive 64 GB\",\"Gaming Mouse\"]', '[\"2\",\"1\"]', '[\"522\",\"1620\"]', '2664.00', 'pending', 'Rezaul Bari', '01825895727', 'rz@email.com', 'Bashundhara Dhaka Bangladesh', '2021-01-18 01:14:36', '2021-01-18 01:14:36'),
-(16, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"2\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '5119.00', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:28:21', '2021-01-18 04:28:21'),
-(17, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:29:52', '2021-01-18 04:29:52'),
-(18, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:32:12', '2021-01-18 04:32:12'),
-(19, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:37:19', '2021-01-18 04:37:19'),
-(20, '[\"Blue Jeans\",\"Kids Shirt\",\"Kids Jacket\",\"Kid Dress\",\"Women Jeans\",\"Men Sport Boot\"]', '[\"2\",\"2\",\"2\",\"1\",\"1\",\"2\"]', '[\"1080\",\"475\",\"1665\",\"810\",\"1140\",\"1620\"]', '10010.00', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:48:32', '2021-01-18 04:48:32'),
-(21, '[\"Men Sport Boot\"]', '[\"2\"]', '[\"1620\"]', '3240', 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:53:10', '2021-01-18 04:53:10');
+INSERT INTO `orders` (`id`, `product_name`, `product_qty`, `product_price`, `product_sub_total`, `delivery`, `status`, `customer_name`, `customer_phone`, `customer_email`, `customer_address`, `created_at`, `updated_at`) VALUES
+(1, '[\"Headphone\",\"Pendrive 64 GB\",\"Gaming Mouse\"]', '[\"1\",\"2\",\"2\"]', '[\"2375\",\"522\",\"1620\"]', '6659.00', NULL, 'delivered', 'Mehedy Hassan', '01758945236', 'mehedy@gmail.com', 'Bashundhara Dhaka Bangladesh', '2021-01-17 06:37:59', '2021-01-18 00:47:11'),
+(10, '[\"Pendrive 64 GB\",\"Gaming Mouse\"]', '[\"2\",\"1\"]', '[\"522\",\"1620\"]', '2664.00', NULL, 'pending', 'Rezaul Bari', '01825895727', 'rz@email.com', 'Bashundhara Dhaka Bangladesh', '2021-01-18 01:14:36', '2021-01-18 01:14:36'),
+(16, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"2\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '5119.00', NULL, 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:28:21', '2021-01-18 04:28:21'),
+(17, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', NULL, 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:29:52', '2021-01-18 04:29:52'),
+(18, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', NULL, 'pending', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:32:12', '2021-01-18 04:32:12'),
+(19, '[\"Blue Jeans\",\"Men Jeans\",\"Ladies Shoes\",\"Ladies Shoes\"]', '[\"1\",\"1\",\"1\",\"1\"]', '[\"1080\",\"799\",\"1080\",\"1080\"]', '4039', NULL, 'canceled', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:37:19', '2021-01-26 06:04:23'),
+(20, '[\"Blue Jeans\",\"Kids Shirt\",\"Kids Jacket\",\"Kid Dress\",\"Women Jeans\",\"Men Sport Boot\"]', '[\"2\",\"2\",\"2\",\"1\",\"1\",\"2\"]', '[\"1080\",\"475\",\"1665\",\"810\",\"1140\",\"1620\"]', '10010.00', NULL, 'returned', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:48:32', '2021-01-26 06:04:16'),
+(21, '[\"Men Sport Boot\"]', '[\"2\"]', '[\"1620\"]', '3240', NULL, 'delivered', 'rijwan chowdhury', '01825895465', 'rijwanc007@gmail.com', 'sharif complex', '2021-01-18 04:53:10', '2021-01-26 06:04:12'),
+(22, '[\"Kids Shirt\"]', '[\"2\"]', '[\"475\"]', '950', NULL, 'canceled', 'Mehedy Hassan', '01825895465', NULL, 'sharif complex', '2021-01-26 06:13:41', '2021-01-26 06:52:27'),
+(23, '[\"Blue Bag\",\"Kids Jacket\"]', '[\"1\",\"2\"]', '[\"2250\",\"1665\"]', '5580', '50', 'pending', 'Mehedy Hassan', '01825895465', NULL, 'sharif complex', '2021-01-26 06:54:17', '2021-01-26 06:54:17'),
+(24, '[\"Pendrive Sandisk\"]', '[\"1\"]', '[\"300\"]', '300', '120', 'pending', 'rijwan chowdhury', '01825895465', NULL, 'sharif complex', '2021-01-27 00:16:39', '2021-01-27 00:16:39'),
+(25, '[\"Kids Jacket\",\"Gaming Mouse\",\"Men Sport Boot\"]', '[\"3\",\"2\",\"1\"]', '[\"1665\",\"1620\",\"1620\"]', '9855', '120', 'pending', 'rijwan chowdhury', '01825895465', NULL, 'sharif complex', '2021-01-28 01:57:33', '2021-01-28 01:57:33'),
+(26, '[\"Men Sport Boot\",\"Blue Head Phones\"]', '[\"1\",\"2\"]', '[\"1620\",\"1350\"]', '4320', '120', 'pending', 'Mehedy Hassan', '01825895465', NULL, 'sharif complex', '2021-01-28 04:35:00', '2021-01-28 04:35:00');
 
 -- --------------------------------------------------------
 
@@ -265,18 +271,14 @@ INSERT INTO `products` (`id`, `product_code`, `category`, `sub_category`, `image
 (46, 'j1', 'men', 'JEANS', '1822256286.jpg', 'Men Jeans', 'Men Jeans', NULL, NULL, '850', '799', '6', '2021-01-04 04:10:34', '2021-01-04 04:10:34'),
 (47, 'j2', 'men', 'JEANS', '2110648938.jpg', 'Blue Jeans', 'Blue Jeans', NULL, NULL, '1200', '1080', '10', '2021-01-04 04:12:18', '2021-01-04 04:12:18'),
 (48, 's1', 'men', 'SPORTS SHOES', '540433200.jpg', 'Men Sport Keds', 'Men Sport Keds', 'featured', '2', '1500', '1425', '5', '2021-01-04 04:13:14', '2021-01-04 04:13:14'),
-(49, 's2', 'men', 'SPORTS SHOES', '1985158377.jpg', 'Men Sport Boot', 'Men Sport Boot', 'featured', '2', '1800', '1620', '10', '2021-01-04 04:13:53', '2021-01-04 04:13:53'),
 (50, 'wj1', 'women', 'JEANS', '1351292654.jpg', 'Women Jeans', 'Women Jeans', 'new', NULL, '1200', '1140', '5', '2021-01-04 04:14:36', '2021-01-04 04:14:36'),
 (51, 'wj3', 'women', 'JEANS', '1804153104.jpg', 'Women Jeans', 'Women Jeans', 'best', NULL, '1650', '1485', '10', '2021-01-04 04:19:15', '2021-01-04 04:19:15'),
 (52, 'h1', 'accessories', 'HEADPHONE & EARPHONE', '340156565.jpg', 'Head Phone', 'Head Phone', NULL, NULL, '1800', '1620', '10', '2021-01-04 04:19:42', '2021-01-04 04:19:42'),
-(53, 'p1', 'groceries', 'VEGETABLES', '976850997.jpg', 'Spinach', 'Spinach', NULL, NULL, NULL, '55', NULL, '2021-01-04 04:20:11', '2021-01-04 04:20:11'),
 (54, 'k2', 'groceries', 'FRUITS', '1052580754.jpg', 'kiwi', 'Kiwi', NULL, NULL, NULL, '250', NULL, '2021-01-04 04:20:42', '2021-01-04 04:20:42'),
-(56, 'ts1', 'men', 'T-SHIRTS', '1004516321.jpg', 'Men T-shirt', 'Men T-shirts', 'new', NULL, NULL, '250', NULL, '2021-01-04 05:10:50', '2021-01-04 05:10:50'),
 (57, 'apple1', 'groceries', 'FRUITS', '1213823023.jpg', 'Red Apple', NULL, NULL, '1', '250', '225', '10', '2021-01-04 22:16:40', '2021-01-04 22:16:40'),
 (58, 'he1', 'accessories', 'HEADPHONE & EARPHONE', '448645964.jpg', 'Blue Head Phones', NULL, 'featured', '1', '1500', '1350', '10', '2021-01-04 22:24:51', '2021-01-06 02:31:16'),
 (59, 'kj43', 'kids', 'JACKETS', '178665057.jpg', 'Kids Jacket', NULL, 'featured', '2', '1850', '1665', '10', '2021-01-04 22:25:39', '2021-01-04 22:25:39'),
 (60, 'gm2', 'accessories', 'MOUSE & KEYBOARD', '287480117.jpg', 'Gaming Mouse', NULL, 'featured', '2', '1800', '1620', '10', '2021-01-04 22:26:44', '2021-01-04 22:26:44'),
-(61, 'bbg', 'women', 'BAGS', '651719284.jpg', 'Blue Bag', NULL, 'featured', '2', '2500', '2250', '10', '2021-01-04 22:27:34', '2021-01-04 22:27:34'),
 (62, 'rbbg', 'women', 'BAGS', '493121705.jpg', 'Red Velvet Bag', NULL, 'new', '2', '2850', '2565', '10', '2021-01-04 22:28:10', '2021-01-04 22:28:10'),
 (63, 'hp5', 'accessories', 'HEADPHONE & EARPHONE', '2011290828.jpg', 'Head Phone', NULL, 'featured', '1', '2500', '2250', '10', '2021-01-04 22:30:32', '2021-01-04 22:30:32'),
 (64, 'pp', 'accessories', 'MEMORY', '1912387944.jpg', 'Pendrive 64 GB', NULL, 'featured', '2', '580', '522', '10', '2021-01-04 22:31:36', '2021-01-04 22:55:08'),
@@ -386,12 +388,8 @@ CREATE TABLE `wishlists` (
 --
 
 INSERT INTO `wishlists` (`id`, `ip`, `product_id`, `liked`, `created_at`, `updated_at`) VALUES
-(25, '127.0.0.1', '63', 'yes', '2021-01-04 23:47:20', '2021-01-04 23:47:20'),
-(42, '127.0.0.1', '61', 'yes', '2021-01-09 04:16:06', '2021-01-09 04:16:06'),
-(43, '127.0.0.1', '50', 'yes', '2021-01-09 04:26:59', '2021-01-09 04:26:59'),
-(52, '127.0.0.1', '75', 'yes', '2021-01-09 04:27:59', '2021-01-09 04:27:59'),
-(53, '127.0.0.1', '74', 'yes', '2021-01-09 04:28:08', '2021-01-09 04:28:08'),
-(59, '127.0.0.1', '70', 'yes', '2021-01-09 06:39:16', '2021-01-09 06:39:16');
+(62, '127.0.0.1', '53', 'yes', '2021-01-26 06:11:00', '2021-01-26 06:11:00'),
+(90, '127.0.0.1', '49', 'yes', '2021-01-28 01:51:03', '2021-01-28 01:51:03');
 
 --
 -- Indexes for dumped tables
@@ -520,7 +518,7 @@ ALTER TABLE `offers`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -550,7 +548,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wishlists`
 --
 ALTER TABLE `wishlists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
