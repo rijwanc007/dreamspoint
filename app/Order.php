@@ -11,6 +11,7 @@ class Order extends Model
       'product_qty',
       'product_price',
       'product_sub_total',
+      'delivery',
       'status',
       'customer_name',
       'customer_phone',

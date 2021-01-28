@@ -13,11 +13,16 @@ class CartController extends Controller
 {
     public function store(Request $request)
     {
+        $product_sub_total = 0;
+        for($i=0;$i<count($request->product_qty) ;$i++){
+            $product_sub_total += (($request->product_price[$i]) * ($request->product_qty[$i]));
+        }
         Order::create([
             'product_name'=>json_encode($request->product_name),
             'product_qty'=>json_encode($request->product_qty),
             'product_price'=>json_encode($request->product_price),
-            'product_sub_total'=>$request->product_sub_total,
+            'product_sub_total'=>$product_sub_total,
+            'delivery'=>$request->delivery,
             'status'=>'pending',
             'customer_name'=>$request->name,
             'customer_phone'=>$request->phone,
@@ -45,7 +50,9 @@ class CartController extends Controller
         return $this->setSessionAndReturnResponse($cart);
     }
     protected function sessionData(Product $product){
+
         return [
+            'id' => $product->id,
             'image' => $product->image,
             'code' => $product->product_code,
             'name' => $product->title,
@@ -67,7 +74,7 @@ class CartController extends Controller
             unset($cart[$id]);
             session()->put('cart', $cart);
         }
-        Session::flash('success','Product Remove To Cart');
+        Session::flash('success','Product Removed from Cart');
         return redirect()->back();
     }
 }

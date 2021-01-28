@@ -14,6 +14,7 @@ class CreateOrdersTable extends Migration
             $table->longText('product_qty')->nullable();
             $table->longText('product_price')->nullable();
             $table->string('product_sub_total')->nullable();
+            $table->string('delivery')->nullable();
             $table->string('status')->nullable();
             $table->string('customer_name')->nullable();
             $table->string('customer_phone')->nullable();

@@ -15,7 +15,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{route('dashboard')}}">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
@@ -138,7 +138,7 @@
             <a class="nav-link" data-toggle="collapse" href="#ui-order" aria-expanded="false" aria-controls="ui-order">
                 <span class="menu-title">Order</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-thumb-up"></i>
+                <i class="mdi mdi-cart"></i>
             </a>
             <div class="collapse" id="ui-order">
                 <ul class="nav flex-column sub-menu">

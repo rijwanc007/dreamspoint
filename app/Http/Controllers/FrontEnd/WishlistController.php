@@ -28,6 +28,7 @@ class WishlistController extends Controller
     }
     public function remove($wid){
         Wishlist::find($wid)->delete();
-        return response()->json();
+        Session::flash('success', 'Your Wishlist removed Succesfully');
+        return redirect()->back();
     }
 }

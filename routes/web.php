@@ -27,7 +27,7 @@ Route::get('accessories-price-search', 'FrontEnd\AccessoriesController@accessori
 
 Route::get('offer-zone', 'FrontEnd\OfferzoneController@offer_zone')->name('frontend.offer_zone');
 Route::get('/wishlist/{pid}', 'FrontEnd\WishlistController@wishlist');
-Route::get('/remove/{wid}', 'FrontEnd\WishlistController@remove');
+Route::get('/remove/{wid}', 'FrontEnd\WishlistController@remove')->name('remove');
 
 
 Route::resource('subscriber', 'BackEnd\SubscriberController');
@@ -43,7 +43,7 @@ Route::get('/remove/product/{id}', 'FrontEnd\CartController@removeFromCart')->na
 //goto backend set /login in url
 Route::get('/home', array('before' => 'auth', 'uses' => 'HomeController@index'));
 Route::group(['middleware' => ['preventbackbutton','auth']],function() {
-    Route::get('/home','HomeController@index');
+    Route::get('/home','HomeController@index')->name('dashboard');
     Route::resource('/user','BackEnd\UserController');
     Route::get('user-index','BackEnd\UserController@index')->name('user.index');
     Route::get('user-create','BackEnd\UserController@create')->name('user.create');

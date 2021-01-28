@@ -49,19 +49,27 @@
                                 <div class="col-md-2 text-center">{{$i+1}}</div>
                                 <div class="col-md-4 text-center">{{json_decode($order->product_name)[$i]}}</div>
                                 <div class="col-md-2 text-center">{{json_decode($order->product_qty)[$i]}}</div>
-                                <div class="col-md-2 text-center">{{json_decode($order->product_price)[$i]}} /-</div>
-                                <div class="col-md-2 text-center">{{json_decode($order->product_price)[$i] * json_decode($order->product_qty)[$i]}} /-</div>
+                                <div class="col-md-2 text-center">{{json_decode($order->product_price)[$i]}}.00</div>
+                                <div class="col-md-2 text-center">{{json_decode($order->product_price)[$i] * json_decode($order->product_qty)[$i]}}.00</div>
                                     <br/><br/>
                                 @endfor
                                 <div class="col-md-12"><hr/></div>
-                                <div class="col-md-6"></div>
-                                <div class="col-md-3 text-right"><b>Sub Total</b></div>
-                                <div class="col-md-3 text-right"><b>{{$order->product_sub_total}} /-</b></div>
+                                <div class="col-md-7"></div>
+                                <div class="col-md-3 text-left"><b>Sub Total:</b></div>
+                                <div class="col-md-2 text-center"><b>৳{{$order->product_sub_total}}.00</b></div>
+                                <br/><br/>
+                                <div class="col-md-7"></div>
+                                <div class="col-md-3 text-left"><b>Delivery Charge:</b></div>
+                                <div class="col-md-2 text-center"><b>৳{{$order->delivery}}.00</b></div>
+                                <div class="col-md-7"></div>
+                                <div class="col-md-5"><hr/></div>
+                                <div class="col-md-7"></div>
+                                <div class="col-md-3 text-left"><b>Total:</b></div>
+                                <div class="col-md-2 text-center"><b>৳{{$order->product_sub_total + $order->delivery}}.00</b></div>
                                 <br/><br/><br/>
                                 <div class="col-md-12"><b>Note : </b></div>
                                 <br/><br/>
-                                <div class="col-md-12">Free Shipping Within 7 Days of Payment</div>
-                                <div class="col-md-12">Free Return Within 7 Days of recieving the Product</div>
+                                <div class="col-md-12">Delivery Will Take Placed Within 2-4 Working Days.</div>
                                 <br/><br/><br/>
                                 <div class="col-md-6"></div>
                                 <div class="col-md-6 text-center"><b>On Behalf Dreampoint Bd</b><hr/></div>

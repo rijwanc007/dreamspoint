@@ -97,7 +97,7 @@
                             <a href="">{{$men_product->title}}</a>
                         </div>
                         <div class="product-price">
-                            <span>{{!empty($men_product->prev_price) ? '$' .$men_product->prev_price : ''}}</span> ${{$men_product->new_price}}
+                            <span>{{!empty($men_product->prev_price) ? '৳' .$men_product->prev_price : ''}}</span> ৳{{$men_product->new_price}}
                         </div>
                     </div>
                 @empty
@@ -141,7 +141,7 @@
                             <a href="">{{$women_product->title}}</a>
                         </div>
                         <div class="product-price">
-                            <span>{{!empty($women_product->prev_price) ? '$' .$women_product->prev_price : ''}}</span> ${{$women_product->new_price}}
+                            <span>{{!empty($women_product->prev_price) ? '৳' .$women_product->prev_price : ''}}</span> ৳{{$women_product->new_price}}
                         </div>
                     </div>
                 @empty
@@ -185,7 +185,7 @@
                             <a href="">{{$kid_product->title}}</a>
                         </div>
                         <div class="product-price">
-                            <span>{{!empty($kid_product->prev_price) ? '$' .$kid_product->prev_price : ''}}</span> ${{$kid_product->new_price}}
+                            <span>{{!empty($kid_product->prev_price) ? '৳' .$kid_product->prev_price : ''}}</span> ৳{{$kid_product->new_price}}
                         </div>
                     </div>
                 @empty

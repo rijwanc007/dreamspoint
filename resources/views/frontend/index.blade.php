@@ -38,14 +38,14 @@
                             <div class="col-md-6">
                                 <div class="slide-offers-left">
                                     <div class="slide-offers-title"><span>Men’s</span><br/>FASHION</div>
-                                    <p>New & Fvhresh collection<br/>arraival in believe store</p>
+                                    <p>New & Fashion collection<br/>arrival in believe store</p>
                                     <a href="{{route('frontend.men.cloth')}}" class="btn btn-blue">Shop now</a>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="slide-offers-right">
                                     <div class="slide-offers-title"><span>Women’s</span><br/>FASHION</div>
-                                    <p>New & Fvhresh collection<br/>arraival in believe store</p>
+                                    <p>New & Fashion collection<br/>arrival in believe store</p>
                                     <a href="{{route('frontend.women.cloth')}}" class="btn btn-magenta">Shop now</a>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                             <div class="col-md-6">
                                 <div class="slide-offers-left">
                                     <div class="slide-offers-title"><span>50% Price cut</span><br/>for online order</div>
-                                    <p>New & Fvhresh collection<br/>arraival in believe store</p>
+                                    <p>New & Fashion collection<br/>arrival in believe store</p>
                                     <a href="{{route('frontend.cloth')}}" class="btn btn-blue">Shop now</a>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                                                 <a href="">{{$product->title}}</a>
                                             </div>
                                             <div class="product-price">
-                                                <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                             </div>
                                         </div>
                                         @if($f>=8)
@@ -208,7 +208,7 @@
                                                 <a href="">{{$product->title}}</a>
                                             </div>
                                             <div class="product-price">
-                                                <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                             </div>
                                         </div>
                                     @endforeach
@@ -253,7 +253,7 @@
                                                 {{$product->title}}
                                             </div>
                                             <div class="product-price">
-                                                <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                             </div>
                                         </div>
                                         @if($n>=12)
@@ -293,7 +293,7 @@
                                                 <a href="">{{$product->title}}</a>
                                             </div>
                                             <div class="product-price">
-                                                <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                             </div>
                                         </div>
                                         @if($b>=12)
@@ -359,6 +359,7 @@
                                                                 <div id="product-image">
                                                                     <div class="item"><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" class="img-responsive" style="width: 100%;"></div>
                                                                 </div>
+                                                                @if($offer->duration > date('Y-m-d'))
                                                                 <div class="product-fade-ct">
                                                                     <div class="product-fade-control">
                                                                         <div class="to-left">
@@ -370,13 +371,14 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
+                                                                @endif
                                                             </div>
                                                         </div>
                                                         <div class="product-name">
                                                             <a href="">{{$product->title}}</a>
                                                         </div>
                                                         <div class="product-price">
-                                                            <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                            <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                                         </div>
                                                     </div>
                                                 @endif
@@ -540,8 +542,7 @@
                             <div class="col-md-3"><img src="{{asset('assets/images/icon/support-icon.png')}}"></div>
                             <div class="col-md-9">
                                 <h4>Support</h4>
-                                <p>Whatsapp : +880-1909040003</p>
-                                <p>Call : +880-1909040003</p>
+                                <p>+880-1909040003<br/>info@dreamspointbd.com</p>
                             </div>
                         </div>
                     </div>

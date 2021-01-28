@@ -71,6 +71,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $products = Product::where('sub_category', $category->sub_category)->orderBy('id', 'DESC')->get();
         foreach ($products as $product){
+            unlink('assets/images/products/'.$product->category.'/'.$product->image);
             $product->delete();
         }
         $category->delete();

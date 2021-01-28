@@ -77,7 +77,7 @@
                                                                     {{$product->title}}
                                                                 </div>
                                                                 <div class="product-price">
-                                                                    <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                                                    <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                                                 </div>
                                                             </div>
                                                         @endif
@@ -165,7 +165,7 @@
                                 <a href="">{{$product->title}}</a>
                             </div>
                             <div class="product-price">
-                                <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                             </div>
                         </div>
                     @endif
@@ -212,7 +212,7 @@
                                     <a href="">{{$product->title}}</a>
                                 </div>
                                 <div class="product-price">
-                                    <span>{{$product->prev_price ? '$'.$product->prev_price : ''}}</span> ${{$product->new_price}}
+                                    <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                 </div>
                             </div>
                         @endif

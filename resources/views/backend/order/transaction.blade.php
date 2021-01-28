@@ -47,7 +47,7 @@
                                         <td>{{ $loop->index + 1 }}</td>
                                         <td>{{ date('d-m-Y', strtotime($order->created_at))}}</td>
                                         <td>{{$order->id}}</td>
-                                        <td>{{$order->product_sub_total}} /-</td>
+                                        <td>{{$order->product_sub_total}}</td>
                                     </tr>
                                 @empty
                                     <tr>
@@ -58,7 +58,7 @@
                                 <tfoot>
                                 <tr class="text-center">
                                     <td colspan="3" class="text-info">Total</td>
-                                    <td class="text-info">{{$orders->sum('product_sub_total')}} /-</td>
+                                    <td class="text-info">{{$orders->sum('product_sub_total')}}.00</td>
                                 </tr>
                                 </tfoot>
                             </table>
