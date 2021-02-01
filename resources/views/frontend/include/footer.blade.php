@@ -70,14 +70,14 @@ $j=0;
                     </div>
                 </div>
             </div>
-            <hr/>
+            <hr class="footer_hr"/>
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-widget">
 {{--                        <div class="wid-title text-center">Welcome to</div>--}}
 {{--                        <div class="text-center"><a href="{{url('/')}}"><img src="{{asset('assets/images/dpb_logo-2.png')}}" class="dp_logo" alt="ft-logo"></a></div>--}}
-                        <div class="wid-title text-center">Welcome to Dreams PointBD</div>
-                        <h5 id="footer_content" style="text-align: justify">Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!</h5>
+                        <div class="wid-title text-center">Welcome to Tuba BD</div>
+                        <h5 id="footer_content" style="text-align: justify">Tuba BD is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -91,32 +91,32 @@ $j=0;
                                 <div class="col-md-6"><h6 class="text-center">No Hot Deals Available!!!</h6></div>
                             @endforelse
                         </div>
-{{--                        <br/><br/><br/>--}}
-{{--                        <div class="text-center">--}}
-{{--                            <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>--}}
-{{--                            <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>--}}
-{{--                            <a href="https://www.youtube.com/channel/UC-qxB2hi09-Af5luvd5v4vg" target="_blank"><img src="{{asset('assets/images/icon/youtube.png')}}" class="social_icon"></a>--}}
-{{--                            <a href="https://www.linkedin.com/company/dreampointbd" target="_blank"><img src="{{asset('assets/images/icon/linkedin.png')}}" class="social_icon"></a>--}}
-{{--                            <a href="https://www.instagram.com/dreampointbd/" target="_blank"><img src="{{asset('assets/images/icon/instagram.png')}}" class="social_icon"></a>--}}
-{{--                            <a href="https://twitter.com/DreamPointBang1" target="_blank"><img src="{{asset('assets/images/icon/twiter.png')}}" class="social_icon"></a>--}}
-{{--                        </div>--}}
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="wid-title text-center">Social Media</div>
-                    <div class="text-center">
-                        <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>
-                        <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>
-                        <a href="https://www.youtube.com/channel/UC-qxB2hi09-Af5luvd5v4vg" target="_blank"><img src="{{asset('assets/images/icon/youtube.png')}}" class="social_icon"></a>
-                        <a href="https://www.linkedin.com/company/dreampointbd" target="_blank"><img src="{{asset('assets/images/icon/linkedin.png')}}" class="social_icon"></a>
-                        <a href="https://www.instagram.com/dreampointbd/" target="_blank"><img src="{{asset('assets/images/icon/instagram.png')}}" class="social_icon"></a>
-                        <a href="https://twitter.com/DreamPointBang1" target="_blank"><img src="{{asset('assets/images/icon/twiter.png')}}" class="social_icon"></a>
+                        <br/><br/><br/>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>
+                            <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>
+                            <a href="https://www.youtube.com/channel/UC-qxB2hi09-Af5luvd5v4vg" target="_blank"><img src="{{asset('assets/images/icon/youtube.png')}}" class="social_icon"></a>
+                            <a href="https://www.linkedin.com/company/dreampointbd" target="_blank"><img src="{{asset('assets/images/icon/linkedin.png')}}" class="social_icon"></a>
+                            <a href="https://www.instagram.com/dreampointbd/" target="_blank"><img src="{{asset('assets/images/icon/instagram.png')}}" class="social_icon"></a>
+                            <a href="https://twitter.com/DreamPointBang1" target="_blank"><img src="{{asset('assets/images/icon/twiter.png')}}" class="social_icon"></a>
+                        </div>
                     </div>
                 </div>
 {{--                <div class="col-md-4">--}}
-{{--                    <div class="wid-title text-center">Pay With</div>--}}
-{{--                    <img src="{{asset('assets/images/payment_method/pay-with.png')}}" width="100%">--}}
+{{--                    <div class="wid-title text-center">Social Media</div>--}}
+{{--                    <div class="text-center">--}}
+{{--                        <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>--}}
+{{--                        <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>--}}
+{{--                        <a href="https://www.youtube.com/channel/UC-qxB2hi09-Af5luvd5v4vg" target="_blank"><img src="{{asset('assets/images/icon/youtube.png')}}" class="social_icon"></a>--}}
+{{--                        <a href="https://www.linkedin.com/company/dreampointbd" target="_blank"><img src="{{asset('assets/images/icon/linkedin.png')}}" class="social_icon"></a>--}}
+{{--                        <a href="https://www.instagram.com/dreampointbd/" target="_blank"><img src="{{asset('assets/images/icon/instagram.png')}}" class="social_icon"></a>--}}
+{{--                        <a href="https://twitter.com/DreamPointBang1" target="_blank"><img src="{{asset('assets/images/icon/twiter.png')}}" class="social_icon"></a>--}}
+{{--                    </div>--}}
 {{--                </div>--}}
+                <div class="col-md-4">
+                    <div class="wid-title text-center">Pay With</div>
+                    <img src="{{asset('assets/images/payment_method/pay-with.png')}}" width="100%">
+                </div>
             </div>
             <br/>
             <div class="row">

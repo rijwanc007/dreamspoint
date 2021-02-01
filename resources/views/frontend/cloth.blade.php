@@ -78,20 +78,26 @@
                         <div class="product-fade">
                             <div class="product-fade-wrap">
                                 <div id="product-image">
-                                    <div class="item2"><img src="{{asset('assets/images/products/'.$men_product->category . '/'.$men_product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                    <div class="item2"><a href="{{route('product_view', [$men_product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$men_product->category . '/'.$men_product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                 </div>
-                                <div class="product-fade-ct">
-                                    <div class="product-fade-control">
-                                        <div class="to-left">
-                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$men_product->id}}" title="Add To Wishlist">
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <a href="{{route('add-cart', [$men_product->id])}}" class="btn btn-to-cart">
-                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                        </a>
-                                    </div>
-                                </div>
+{{--                                <div class="product-fade-ct">--}}
+{{--                                    <div class="product-fade-control">--}}
+{{--                                        <div class="to-left">--}}
+{{--                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$men_product->id}}" title="Add To Wishlist">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="clearfix"></div>--}}
+{{--                                        <a href="{{route('add-cart', [$men_product->id])}}" class="btn btn-to-cart">--}}
+{{--                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
+                        </div>
+                        <div class="row text-center">
+                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="" data-id="{{$men_product->id}}" title="Add To Wishlist" style="width: 50px">
+                            <a href="{{route('product_view', [$men_product->id])}}" class="" id="">
+                                <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="" title="See More Details" style="width: 50px">
+                            </a>
                         </div>
                         <div class="product-name">
                             <a href="">{{$men_product->title}}</a>
@@ -122,20 +128,26 @@
                         <div class="product-fade">
                             <div class="product-fade-wrap">
                                 <div id="product-image">
-                                    <div class="item2"><img src="{{asset('assets/images/products/'.$women_product->category . '/'.$women_product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                    <div class="item2"><a href="{{route('product_view', [$women_product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$women_product->category . '/'.$women_product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                 </div>
-                                <div class="product-fade-ct">
-                                    <div class="product-fade-control">
-                                        <div class="to-left">
-                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$women_product->id}}" title="Add To Wishlist">
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <a href="{{route('add-cart', [$women_product->id])}}" class="btn btn-to-cart">
-                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                        </a>
-                                    </div>
-                                </div>
+{{--                                <div class="product-fade-ct">--}}
+{{--                                    <div class="product-fade-control">--}}
+{{--                                        <div class="to-left">--}}
+{{--                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$women_product->id}}" title="Add To Wishlist">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="clearfix"></div>--}}
+{{--                                        <a href="{{route('add-cart', [$women_product->id])}}" class="btn btn-to-cart">--}}
+{{--                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
+                        </div>
+                        <div class="row text-center">
+                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="" data-id="{{$women_product->id}}" title="Add To Wishlist" style="width: 50px">
+                            <a href="{{route('product_view', [$women_product->id])}}" class="" id="">
+                                <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="" title="See More Details" style="width: 50px">
+                            </a>
                         </div>
                         <div class="product-name">
                             <a href="">{{$women_product->title}}</a>
@@ -166,20 +178,26 @@
                         <div class="product-fade">
                             <div class="product-fade-wrap">
                                 <div id="product-image">
-                                    <div class="item2"><img src="{{asset('assets/images/products/'.$kid_product->category . '/'.$kid_product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                    <div class="item2"><a href="{{route('product_view', [$kid_product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$kid_product->category . '/'.$kid_product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                 </div>
-                                <div class="product-fade-ct">
-                                    <div class="product-fade-control">
-                                        <div class="to-left">
-                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$kid_product->id}}" title="Add To Wishlist">
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <a href="{{route('add-cart', [$kid_product->id])}}" class="btn btn-to-cart">
-                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                        </a>
-                                    </div>
-                                </div>
+{{--                                <div class="product-fade-ct">--}}
+{{--                                    <div class="product-fade-control">--}}
+{{--                                        <div class="to-left">--}}
+{{--                                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$kid_product->id}}" title="Add To Wishlist">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="clearfix"></div>--}}
+{{--                                        <a href="{{route('add-cart', [$kid_product->id])}}" class="btn btn-to-cart">--}}
+{{--                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
+                        </div>
+                        <div class="row text-center">
+                            <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="" data-id="{{$kid_product->id}}" title="Add To Wishlist" style="width: 50px">
+                            <a href="{{route('product_view', [$kid_product->id])}}" class="" id="">
+                                <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="" title="See More Details" style="width: 50px">
+                            </a>
                         </div>
                         <div class="product-name">
                             <a href="">{{$kid_product->title}}</a>

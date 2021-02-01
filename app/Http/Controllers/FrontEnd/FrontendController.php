@@ -25,5 +25,9 @@ class FrontendController extends Controller
         $kid_products = Product::where('category', 'kids')->where('pf', 'new')->orderBy('id', 'DESC')->get();
         return view('frontend.cloth', compact('men_products', 'women_products', 'kid_products'));
     }
+    public function product_view($id){
+        $product = Product::find($id);
+        return view('frontend.product_view', compact('product'));
+    }
 
 }

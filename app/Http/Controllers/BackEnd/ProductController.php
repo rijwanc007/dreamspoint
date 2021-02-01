@@ -31,25 +31,41 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
+        if(!empty($request->size)){
+            $size = json_encode(explode(',', $request->size));
+        }
+        else{
+            $size = null;
+        }
+        if(!empty($request->color)){
+            $color = json_encode(explode(',', $request->color));
+        }
+        else{
+            $color = null;
+        }
+
+
         $document = $request->file('photo');
         $document_name = rand().'.'.$document->getClientOriginalExtension();
         $document->move(public_path().'/assets/images/products/'.$request->category.'/',$document_name);
 
-       Product::create([
-          'category'=>$request->category,
-          'sub_category'=>$request->sub_category,
-          'image'=>$document_name,
-           'title'=>$request->title,
-           'product_code'=>$request->p_code,
-           'description'=>$request->description,
-           'offer'=>$request->offer,
-           'pf'=>$request->pf,
-           'prev_price'=>$request->pp,
-           'new_price'=>$request->np,
-           'discount'=>$request->discount,
-       ]);
-       Session::flash('success', 'Product added successfully');
-       return redirect()->route('product.index');
+        Product::create([
+            'category'=>$request->category,
+            'sub_category'=>$request->sub_category,
+            'image'=>$document_name,
+            'title'=>$request->title,
+            'product_code'=>$request->p_code,
+            'description'=>$request->description,
+            'size'=>$size,
+            'color'=>$color,
+            'offer'=>$request->offer,
+            'pf'=>$request->pf,
+            'prev_price'=>$request->pp,
+            'new_price'=>$request->np,
+            'discount'=>$request->discount,
+        ]);
+        Session::flash('success', 'Product added successfully');
+        return redirect()->route('product.index');
     }
 
     public function show($id)
@@ -60,14 +76,29 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
+        $size = $product->size == 'null' ? '' : str_replace(str_split('[]""'),"",$product->size);
+        $color = $product->color == 'null' ? ' ' : str_replace(str_split('[]""'),"",$product->color);
         $categories = Category::orderBy('id', 'DESC')->select('name')->distinct()->get();
         $sub_categories = Category::where('name', $product->category)->orderBy('id','DESC')->get();
         $offers = Offer::orderBy('id', 'DESC')->get();
-        return view('backend.product.edit', compact('product','categories', 'sub_categories', 'offers'));
+        return view('backend.product.edit', compact('product','categories', 'sub_categories', 'offers', 'size', 'color'));
     }
 
     public function update(Request $request, $id)
     {
+        if(!empty($request->size)){
+            $size = json_encode(explode(',', $request->size));
+        }
+        else{
+            $size = null;
+        }
+        if(!empty($request->color)){
+            $color = json_encode(explode(',', $request->color));
+        }
+        else{
+            $color = null;
+        }
+
         $product = Product::find($id);
         $d = Product::find($id);
         if(!empty($request->file('photo'))){
@@ -83,6 +114,8 @@ class ProductController extends Controller
                 'title'=>$request->title,
                 'product_code'=>$request->p_code,
                 'description'=>$request->description,
+                'size'=>$size,
+                'color'=>$color,
                 'offer'=>$request->offer,
                 'pf'=>$request->pf,
                 'prev_price'=>$request->pp,
@@ -98,6 +131,8 @@ class ProductController extends Controller
                 'title'=>$request->title,
                 'product_code'=>$request->p_code,
                 'description'=>$request->description,
+                'size'=>json_encode($size),
+                'color'=>json_encode($color),
                 'offer'=>$request->offer,
                 'pf'=>$request->pf,
                 'prev_price'=>$request->pp,

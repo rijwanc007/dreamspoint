@@ -39,6 +39,7 @@ Route::get('/cart', 'FrontEnd\CartController@cart')->name('cart');
 Route::post('/cart/store', 'FrontEnd\CartController@store')->name('cart.store');
 Route::get('/add-to-cart/{product}', 'FrontEnd\CartController@addToCart')->name('add-cart');
 Route::get('/remove/product/{id}', 'FrontEnd\CartController@removeFromCart')->name('remove_product');
+Route::get('product-view/{product}', 'FrontEnd\FrontendController@product_view')->name('product_view');
 
 //goto backend set /login in url
 Route::get('/home', array('before' => 'auth', 'uses' => 'HomeController@index'));

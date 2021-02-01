@@ -21,6 +21,8 @@ class CreateProductsTable extends Migration
             $table->longText('product_code')->nullable();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
+            $table->string('size')->nullable();
+            $table->string('color')->nullable();
             $table->string('pf')->nullable();
             $table->string('offer')->nullable();
             $table->string('prev_price')->nullable();

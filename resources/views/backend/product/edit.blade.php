@@ -41,6 +41,14 @@
                         <textarea rows="8" cols="20" class="form-control" id="description" name="description" placeholder="Product Description">{{$product->description}}</textarea>
                     </div>
                     <div class="form-group">
+                        <label for="size">Size</label>
+                        <input type="text" class="form-control" id="size" name="size" placeholder="Seperate with comma ," value="{{$size}}" >
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color</label>
+                        <input type="text" class="form-control" id="color" name="color" placeholder="Seperate with comma ," value="{{$color}}" >
+                    </div>
+                    <div class="form-group">
                         <label for="pf">Product's Feature</label>
                         <select class="form-control" name="pf">
                             <option selected disabled value="">choose an option</option>

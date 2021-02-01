@@ -19,7 +19,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('assets/images/dpb_logo-2.png')}}" class="dp_logo" alt="ft-logo"></a>
+                        <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('assets/images/logo-2.png')}}" class="dp_logo" alt="ft-logo"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
@@ -41,24 +41,23 @@
                                                         <div class="col-md-3 col-sm-3 col-xs-3" id="cart_title" style="margin-top: 20px">{{$wishlist->product->title}}</div>
                                                         <div class="col-md-3 col-sm-3 col-xs-3">
                                                             <a href="{{route('remove', [$wishlist->id])}}" class="">
-                                                            <img src="{{asset('assets/images/icon/delete2.png')}}" id="remove" alt="bag" class="wihslist_modal_image remove" data-id="{{$wishlist->id}}" style="width: 50%;float: right; margin-top:10px;" title="Remove">
+                                                                <img src="{{asset('assets/images/icon/delete2.png')}}" id="remove" alt="bag" class="wihslist_modal_image remove" data-id="{{$wishlist->id}}" style="width: 50%;float: right; margin-top:10px;" title="Remove">
                                                             </a>
                                                         </div>
                                                         <div class="col-md-3 col-sm-3 col-xs-3">
                                                             <a href="{{route('add-cart', [$wishlist->product->id])}}" class="">
-                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" alt="bag" class="wihslist_modal_image" style="width: 50%" title="Add To Cart">
+                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" alt="bag" class="wihslist_modal_image" style="width: 50%" title="Add To Cart">
                                                             </a>
                                                         </div>
                                                     </div>
                                                 @endif
-                                                    <br/>
-                                                @empty
-                                                    <div class="row text-center">
-                                                        <div class="col-md-3"></div>
-                                                        <div class="col-md-6">No product available in wishlist</div>
-                                                    </div>
-                                                @endforelse
-
+                                                <br/>
+                                            @empty
+                                                <div class="row text-center">
+                                                    <div class="col-md-3"></div>
+                                                    <div class="col-md-6">No product available in wishlist</div>
+                                                </div>
+                                            @endforelse
                                         </div>
                                         <div class="modal-footer">
                                             <div class="row">
@@ -76,12 +75,13 @@
                                             @php
                                                 $find = \App\Product::find($id);
                                                 if(!empty($find)){
-                                                    $i++;
+                                                $i++;
                                                 }
                                             @endphp
                                         @endforeach
                                         <span>{{$i}}</span>
-                                    @else<span>0</span>@endif</a></li>
+                                    @else<span>0</span>@endif</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -89,17 +89,3 @@
         </div>
     </div>
 </div>
-
-{{--<script>--}}
-{{--    $(document).on('click','.remove',function(){--}}
-{{--        let wid = $(this).data('id');--}}
-{{--        $.ajax({--}}
-{{--            url : '/remove/' + wid,--}}
-{{--            method: 'GET',--}}
-{{--            success: function (data){--}}
-{{--                $('#header').load(location.href+'#header');--}}
-{{--                toastr.success('your wishlist removed successfully');--}}
-{{--            }--}}
-{{--        })--}}
-{{--    });--}}
-{{--</script>--}}

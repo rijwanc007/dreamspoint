@@ -13,6 +13,8 @@ class Product extends Model
       'product_code',
       'title',
       'description',
+      'size',
+      'color',
       'pf',
       'offer',
       'prev_price',

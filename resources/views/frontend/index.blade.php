@@ -145,20 +145,29 @@
                                             <div class="product-fade">
                                                 <div class="product-fade-wrap">
                                                     <div id="product-image">
-                                                        <div class="item2"><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                                     </div>
-                                                    <div class="product-fade-ct">
-                                                        <div class="product-fade-control">
-                                                            <div class="to-left">
-                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">
-                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                                            </a>
-                                                        </div>
-                                                    </div>
+{{--                                                    <div class="product-fade-ct">--}}
+{{--                                                        <div class="product-fade-control">--}}
+{{--                                                            <div class="to-left">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="clearfix"></div>--}}
+{{--                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                                            </a>--}}
+{{--                                                            <a href="{{route('product_view', [$product->id])}}" class="btn btn-to-cart" id="btn-to-product">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/view.png')}}" id="cart_design" alt="bag" class="product_cart" title="See More Details">--}}
+{{--                                                            </a>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
                                                 </div>
+                                            </div>
+                                            <div class="row">
+                                                    <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
+                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
+                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
+                                                </a>
                                             </div>
                                             <div class="product-name">
                                                 <a href="">{{$product->title}}</a>
@@ -189,20 +198,29 @@
                                             <div class="product-fade">
                                                 <div class="product-fade-wrap">
                                                     <div id="product-image">
-                                                        <div class="item2"><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                                     </div>
-                                                    <div class="product-fade-ct">
-                                                        <div class="product-fade-control">
-                                                            <div class="to-left">
-                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">
-                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                                            </a>
-                                                        </div>
-                                                    </div>
+{{--                                                    <div class="product-fade-ct">--}}
+{{--                                                        <div class="product-fade-control">--}}
+{{--                                                            <div class="to-left">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="clearfix"></div>--}}
+{{--                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                                            </a>--}}
+{{--                                                            <a href="{{route('product_view', [$product->id])}}" class="btn btn-to-cart" id="btn-to-product">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/view.png')}}" id="cart_design" alt="bag" class="product_cart" title="See More Details">--}}
+{{--                                                            </a>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
                                                 </div>
+                                            </div>
+                                            <div class="row text-center">
+                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
+                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
+                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
+                                                </a>
                                             </div>
                                             <div class="product-name">
                                                 <a href="">{{$product->title}}</a>
@@ -234,20 +252,29 @@
                                             <div class="product-fade">
                                                 <div class="product-fade-wrap">
                                                     <div id="product-image">
-                                                        <div class="item2"><img src="{{asset('assets/images/products/'.$product->category .'/'.$product->image)}}" alt="" class="img-responsive" id="product_img"></div>
+                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category .'/'.$product->image)}}" alt="" class="img-responsive" id="product_img" title="Product Details"></a></div>
                                                     </div>
-                                                    <div class="product-fade-ct">
-                                                        <div class="product-fade-control">
-                                                            <div class="to-left">
-                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">
-                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                                            </a>
-                                                        </div>
-                                                    </div>
+{{--                                                    <div class="product-fade-ct">--}}
+{{--                                                        <div class="product-fade-control">--}}
+{{--                                                            <div class="to-left">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="clearfix"></div>--}}
+{{--                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                                            </a>--}}
+{{--                                                            <a href="{{route('product_view', [$product->id])}}" class="btn btn-to-cart" id="btn-to-product">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/view.png')}}" id="cart_design" alt="bag" class="product_cart" title="See More Details">--}}
+{{--                                                            </a>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
                                                 </div>
+                                            </div>
+                                            <div class="row">
+                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
+                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
+                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
+                                                </a>
                                             </div>
                                             <div class="product-name">
                                                 {{$product->title}}
@@ -271,23 +298,32 @@
                                             $b++;
                                         @endphp
                                         <div class="col-md-3 prdct-grid">
-                                            <div class="product-fade">
-                                                <div class="product-fade-wrap">
+{{--                                            <div class="product-fade">--}}
+{{--                                                <div class="product-fade-wrap">--}}
                                                     <div id="product-image">
-                                                        <div class="item"><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive"></div>
+                                                        <div class="item"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
                                                     </div>
-                                                    <div class="product-fade-ct">
-                                                        <div class="product-fade-control">
-                                                            <div class="to-left">
-                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">
-                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+{{--                                                    <div class="product-fade-ct">--}}
+{{--                                                        <div class="product-fade-control">--}}
+{{--                                                            <div class="to-left">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="product_cart wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="clearfix"></div>--}}
+{{--                                                            <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/favorite-cart.png')}}" id="cart_design" alt="bag" class="product_cart" title="Add To Cart">--}}
+{{--                                                            </a>--}}
+{{--                                                            <a href="{{route('product_view', [$product->id])}}" class="btn btn-to-cart" id="btn-to-product">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/view.png')}}" id="cart_design" alt="bag" class="product_cart" title="See More Details">--}}
+{{--                                                            </a>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+                                            <div class="row">
+                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
+                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
+                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
+                                                </a>
                                             </div>
                                             <div class="product-name">
                                                 <a href="">{{$product->title}}</a>
@@ -354,30 +390,45 @@
                                             @foreach($products as $product)
                                                 @if(!empty($offer) && $product->offer == $offer->id)
                                                     <div class="owl-item">
-                                                        <div class="product-fade">
-                                                            <div class="product-fade-wrap">
+                                                        <div class="{{--product-fade--}}">
+                                                            <div class="{{--product-fade-wrap--}}">
                                                                 <div id="product-image">
-                                                                    <div class="item"><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" class="img-responsive" style="width: 100%;"></div>
+                                                                    <div class="item"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" class="img-responsive" title="Product Details" style="width: 100%; cursor: pointer"></a></div>
                                                                 </div>
                                                                 @if($offer->duration > date('Y-m-d'))
-                                                                <div class="product-fade-ct">
-                                                                    <div class="product-fade-control">
-                                                                        <div class="to-left">
-                                                                            <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">
-                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="offer_cart_2" alt="bag" title="Add To Cart">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
+{{--                                                                <div class="product-fade-ct">--}}
+{{--                                                                    <div class="product-fade-control">--}}
+{{--                                                                        <div class="to-left">--}}
+{{--                                                                            <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                                        </div>--}}
+{{--                                                                        <div class="clearfix"></div>--}}
+{{--                                                                        <a href="{{route('add-cart', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="offer_cart_2" alt="bag" title="Add To Cart">--}}
+{{--                                                                        </a>--}}
+{{--                                                                        <a href="{{route('product_view', [$product->id])}}" class="btn btn-to-cart">--}}
+{{--                                                                            <img src="{{asset('assets/images/icon/view.png')}}" alt="bag" class="offer_cart_2" title="See More Details">--}}
+{{--                                                                        </a>--}}
+{{--                                                                    </div>--}}
+{{--                                                                </div>--}}
                                                                 @endif
                                                             </div>
                                                         </div>
+                                                        @if($offer->duration > date('Y-m-d'))
+                                                        <div class="row text-center">
+                                                            <div class="col-md-6">
+                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="offer_wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
+                                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="offer_view_image" title="See More Details">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        @endif
                                                         <div class="product-name">
                                                             <a href="">{{$product->title}}</a>
                                                         </div>
-                                                        <div class="product-price">
+                                                        <div class="product-offer-price">
                                                             <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
                                                         </div>
                                                     </div>
@@ -402,7 +453,7 @@
                     <span class="dream_point"><span class="span"></span>Dreampoint ?<span class="span"></span><span class="span"></span></span>
                     <br/><br/><br/>
                 </div>
-                <div class="col-md-6"><img src="{{asset('assets/images/icon/dpb_logo-2.png')}}" class="img-responsive" id="dreampoint_logo" width="500px"></div>
+                <div class="col-md-6"><img src="{{asset('assets/images/icon/tuba-logo.png')}}" class="img-responsive" id="dreampoint_logo" width="500px"></div>
                 <div class="col-md-6 about_us_text">We just love the thrill of shopping for new clothes & updating our wardrobes. On the flip side, fashion goes round in circles. Sometimes, if you hold onto something long enough, in a few years it might come back in fashion again.There’s so much choice, mixing, matching, updating, ways to be stand out & personally express yourself.Window shopping, it’s free & you can get so much outfit inspo ideas.I love following trends at designer shows and at retail. I’m fascinated by how trends start on the catwalks or on the street, and how they filter down to retail. I’m curious to compare retail fashion with street fashion. I’m fascinated by the power that we as consumers have to keep a trend alive, despite them being off-trend. I also enjoy seeing trends repeat themselves as the decades go by. It’s like a sport to me and definitely as much a leisure activity as it is part of my job.Dreampoint provides everything we need.Shopping on Dreampoint, the joy of not having to go out & find somewhere to park & shopping in your PJ’s with your feet up & a cup of tea or your favorite tipple whilst you do it!</div>
             </div>
         </div>
