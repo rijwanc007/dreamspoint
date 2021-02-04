@@ -51,7 +51,7 @@ $j=0;
                 <div class="subscribe_box">
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="subscribe text-right">
-                            <div class="card">
+                            <div class="card subscriber_card">
                                 <div class="card-body">
                                     <br/><div class="wid-title text-center">Subscribe for OFFERS & UPDATES</div><br/>
                                     <p class="text-center">
@@ -77,7 +77,7 @@ $j=0;
 {{--                        <div class="wid-title text-center">Welcome to</div>--}}
 {{--                        <div class="text-center"><a href="{{url('/')}}"><img src="{{asset('assets/images/dpb_logo-2.png')}}" class="dp_logo" alt="ft-logo"></a></div>--}}
                         <div class="wid-title text-center">Welcome to Tuba BD</div>
-                        <h5 id="footer_content" style="text-align: justify">Tuba BD is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!Dream Point is an online store. It has everything you need to start buying today!Get your desired product at any time!</h5>
+                        <h5 id="footer_content" style="text-align: justify">Tuba BD is an online store. It has everything you need to start buying today!Get your desired product at any time!Tuba is an online store. It has everything you need to start buying today!Get your desired product at any time!Tuba is an online store. It has everything you need to start buying today!Get your desired product at any time!Tuba is an online store. It has everything you need to start buying today!Get your desired product at any time!</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -91,7 +91,7 @@ $j=0;
                                 <div class="col-md-6"><h6 class="text-center">No Hot Deals Available!!!</h6></div>
                             @endforelse
                         </div>
-                        <br/><br/><br/>
+                        <br/><br/>
                         <div class="text-center">
                             <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>
                             <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>

@@ -9,7 +9,7 @@ html {
     color: #2b2a2f;
 }
 a {
-    color: #66cef6;
+    color: #664b78;
     text-decoration: none;
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -362,10 +362,10 @@ blockquote {
     border-bottom: 6px solid transparent;
     left: 10px;
     top: 11px;
-    left: -6px;
+    /*left: -6px;*/
 }
 #cat-nav {
-    background: #2b2a2f;
+    background: #ba8cd7;
 }
 .homepage-2 #cat-nav {
     background: #fff;
@@ -390,7 +390,7 @@ blockquote {
     position: relative;
 }
 #cat-nav ul li a {
-    color: #747475;
+    color: #fff;
     font-size: 13px;
     font-weight: 700;
     padding: 15px 17px;
@@ -471,7 +471,7 @@ blockquote {
     padding-left: 0;
 }
 #cat-nav ul li {
-    border-right: 1px solid #38363d;
+    /*border-right: 1px solid #38363d;*/
 }
 .homepage-2 #cat-nav ul li {
     border-right: none;
@@ -556,7 +556,7 @@ blockquote {
     float: right;
 }
 .slide-offers-left .slide-offers-title span {
-    color: #66cef6;
+    color: #664b78;
 }
 #sect-1 .slide-offers-left .slide-offers-title span,
 #sect-2 .slide-offers-left .slide-offers-title span {
@@ -659,17 +659,18 @@ blockquote {
     margin-bottom: 7px;
 }
 .services .block-counter li p {
-    color: #21708e;
+    color: #664b78;
 }
 .cat-offers {
     padding-top: 65px;
     padding-bottom: 40px;
-    border-bottom: 1px dashed #2db3e4;
+    border-bottom: 1px dashed #664b78;
 }
 .cat-sec-1,
 .cat-sec-2,
 .cat-sec-3 {
     position: relative;
+    border: 8px solid #ba8cd7;
 }
 .cat-sec-1 .cat-desc,
 .cat-sec-2 .cat-desc,
@@ -990,7 +991,7 @@ blockquote {
     border-radius: 0;
     font-weight: 700;
     font-size: 13px;
-    color: grey;
+    color: #ba8cd7;
     text-transform: uppercase;
     padding-left: 0;
     padding-right: 0;
@@ -998,16 +999,16 @@ blockquote {
 .nav-tabs.newest > li.active > a,
 .nav-tabs.newest > li.active > a:focus,
 .nav-tabs.newest > li.active > a:hover {
-    color: #2b2a2f;
+    color: #664b78;
     cursor: default;
     background-color: #fff;
     border: none;
-    border-bottom: 2px solid #66cef6;
+    border-bottom: 2px solid #664b78;
 }
 .nav-tabs.newest > li > a:hover {
     background: 0 0;
     border: none;
-    border-bottom: 2px solid #66cef6;
+    border-bottom: 2px solid #664b78;
 }
 .product-fade-wrap {
     position: relative;
@@ -1112,10 +1113,10 @@ blockquote {
     margin-right: 10px;
 }
 .content-offers {
-    min-height: 490px;
+    min-height: 600px;
     width: 100%;
     background: url(../images/tommy_heal.jpg) no-repeat left center;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .content-offers2 {
     min-height: 490px;
@@ -1137,7 +1138,7 @@ blockquote {
 .ct-offers p {
     margin: 30px 0;
     font-size: 20px;
-    color: #1f1e38;
+    color: #664b78;
     line-height: 36px;
 }
 .ct-offers .btn {
@@ -1153,7 +1154,7 @@ blockquote {
     font-size: 44px;
     font-weight: 700;
     line-height: normal;
-    color: #1f1e38;
+    color: #664b78;
     text-transform: uppercase;
 }
 .homepage-2 .brands {
@@ -2882,7 +2883,7 @@ blockquote {
     -webkit-transition: all 0.3s ease;
 }
 .btn-magenta {
-    background: #f666b1;
+    background: #664b78;
     color: #fff;
     font-weight: 700;
     border-radius: 3px;
@@ -2894,13 +2895,13 @@ blockquote {
 .btn-magenta:hover {
     color: #fff;
     text-decoration: none;
-    background: #d03083;
+    background: #ba8cd7;
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
 }
 .btn-blue {
-    background: #66cef6;
+    background: #664b78;
     color: #fff;
     font-weight: 700;
     border-radius: 3px;
@@ -2912,7 +2913,7 @@ blockquote {
 .btn-blue:hover {
     color: #fff;
     text-decoration: none;
-    background: #34b0df;
+    background: #ba8cd7;
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -4013,14 +4014,14 @@ blockquote {
 }
 #cat-nav .navbar-default {
     border: none;
-    background: 0 0;
+    background: #ba8cd7;
     margin: 0;
     border-radius: 0;
 }
 #cat-nav .navbar-default .navbar-collapse,
 #cat-nav .navbar-default .navbar-form {
     border: none;
-    background: 0 0;
+    background: #ba8cd7;
 }
 #cat-nav .navbar-default .navbar-nav > .active > a,
 #cat-nav .navbar-default .navbar-nav > .active > a:focus,
@@ -4100,7 +4101,7 @@ blockquote {
     .content-offers {
         min-height: 490px;
         width: 100%;
-        background: url(../images/tommy_cut.jpg) no-repeat left center;
+        background: url(../images/tommy_cut.png) no-repeat left center;
         margin-bottom: 100px;
     }
 }

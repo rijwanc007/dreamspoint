@@ -1,113 +1,85 @@
 @extends('frontend.master')
-@section('title', 'Dream Point | Home')
+@section('title', 'Tuba | Home')
 @section('home', 'active')
 @section('content')
-    <div id="cat-nav">
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cat-nav-mega">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="cat-nav-mega">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown menu-large">There is nothing to show</li>
-                        <li><a href="{{route('frontend.men.cloth')}}">MEN </a></li>
-                        <li><a href="{{route('frontend.women.cloth')}}">WOMEN </a></li>
-                        <li><a href="{{route('frontend.kids.cloth')}}">BABY & KIDS </a></li>
-                        <li><a href="{{route('frontend.groceries')}}">GROCERIES </a></li>
-                        <li><a href="{{route('frontend.accessories')}}">ACCESSORIES </a></li>
-                        <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
-                        <li class="cat-img-off"><img src="{{asset('assets/images/offers.png')}}" alt="off"></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div id="main-slider">
-        <div id="home-slider" class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="{{asset('assets/images/slider-1.jpg')}}" alt="slide-1" class="img-responsive">
-                <div class="slider-desc">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="slide-offers-left">
-                                    <div class="slide-offers-title"><span>Men’s</span><br/>FASHION</div>
-                                    <p>New & Fashion collection<br/>arrival in believe store</p>
-                                    <a href="{{route('frontend.men.cloth')}}" class="btn btn-blue">Shop now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="slide-offers-right">
-                                    <div class="slide-offers-title"><span>Women’s</span><br/>FASHION</div>
-                                    <p>New & Fashion collection<br/>arrival in believe store</p>
-                                    <a href="{{route('frontend.women.cloth')}}" class="btn btn-magenta">Shop now</a>
-                                </div>
+        <div id="cat-nav">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cat-nav-mega">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="collapse navbar-collapse" id="cat-nav-mega">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="{{route('frontend.men.cloth')}}">MEN </a></li>
+                                    <li><a href="{{route('frontend.women.cloth')}}">WOMEN </a></li>
+                                    <li><a href="{{route('frontend.kids.cloth')}}">BABY & KIDS </a></li>
+                                    <li><a href="{{route('frontend.groceries')}}">GROCERIES </a></li>
+                                    <li><a href="{{route('frontend.accessories')}}">ACCESSORIES </a></li>
+                                    <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="{{asset('assets/images/slider-2.jpg')}}" alt="slide-2" class="img-responsive">
-                <div class="slider-desc">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="slide-offers-left">
-                                    <div class="slide-offers-title"><span>50% Price cut</span><br/>for online order</div>
-                                    <p>New & Fashion collection<br/>arrival in believe store</p>
-                                    <a href="{{route('frontend.cloth')}}" class="btn btn-blue">Shop now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="home-content">
-            <div class="cat-offers">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="cat-sec-2" style="border: 1px solid #2db3e4">
-                            <img src="{{asset('assets/images/home/men_photo4.jpg')}}" class="img-responsive" alt="">
-                            <div class="cat-desc">
-                                <div class="cat-inner1">
-                                    <div class="cat-title">cloths<span class="cat-span">Clothing</span></div>
-                                    <a href="{{route('frontend.cloth')}}" class="btn btn-border">Buy Now</a>
+{{--        <div class="row text-center navbar_bottom">--}}
+{{--            <div class="col-md-3 tuba_logo"><a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('assets/images/tuba_logo_GIF.gif')}}" class="dp_logo" alt="ft-logo"></a></div>--}}
+{{--            <div class="col-md-3 "><a href="#" data-toggle="modal" data-target="#wishlist"><img src="{{asset('assets/images/icon/like.png')}}" alt="pav" class="wishlist" id="wishlist_header"> <span>{{0}}</span></a></div>--}}
+{{--            <div class="col-md-3 "><a href="{{route('cart')}}"><img src="{{asset('assets/images/icon/favorite-cart.png')}}" alt="bag" class="wishlist"><span>৳{{0}}</span></a></div>--}}
+{{--            <div class="col-md-3 login_register"><a href="">Login</a>/<a href="">Register</a></div>--}}
+{{--        </div>--}}
+        <div class="row">
+            <div class="col-md-12 like_index"><a href="#" data-toggle="modal" data-target="#wishlist"><img src="{{asset('assets/images/icon/like.png')}}" alt="pav" class="wishlist" id="wishlist_header"> <span class="wishlist_content">{{0}}</span></a></div>
+            <div class="col-md-12 cart_index"><a href="{{route('cart')}}"><img src="{{asset('assets/images/icon/favorite-cart.png')}}" alt="bag" class="wishlist"><span class="cart_content">৳0000000</span></a></div>
+        </div>
+
+        <div id="main-slider">
+            <div id="home-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{{asset('assets/images/slider-1.jpg')}}" alt="slide-1" class="img-responsive">
+                    <div class="slider-desc">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="slide-offers-left">
+    {{--                                    <div class="slide-offers-title"><span>Men’s</span><br/>FASHION</div>--}}
+    {{--                                    <p>New & Fashion collection<br/>arrival in believe store</p>--}}
+    {{--                                    <a href="{{route('frontend.men.cloth')}}" class="btn btn-blue">Shop now</a>--}}
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cat-sec-2" style="border: 1px solid #2db3e4">
-                            <img src="{{asset('assets/images/home/groceries-4.jpg')}}" class="img-responsive" alt="">
-                            <div class="cat-desc">
-                                <div class="cat-inner2">
-                                    <div class="custom">
-                                        <div class="cat-title">groceries<span class="cat-span">Food</span></div>
-                                        <a href="{{route('frontend.groceries')}}" class="btn btn-border">Shop Now</a>
+                                <div class="col-md-6">
+                                    <div class="slide-offers-right">
+    {{--                                    <div class="slide-offers-title"><span>Women’s</span><br/>FASHION</div>--}}
+    {{--                                    <p>New & Fashion collection<br/>arrival in believe store</p>--}}
+    {{--                                    <a href="{{route('frontend.women.cloth')}}" class="btn btn-magenta">Shop now</a>--}}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="cat-sec-2" style="border: 1px solid #2db3e4">
-                            <img src="{{asset('assets/images/home/accessories.jpg')}}" class="img-responsive" alt="">
-                            <div class="cat-desc">
-                                <div class="cat-inner">
-                                    <div class="cat-title">accessories<span class="cat-span">collections - 2020</span></div>
-                                    <a href="{{route('frontend.accessories')}}" class="btn btn-border">Buy Now</a>
+                </div>
+                <div class="item">
+                    <img src="{{asset('assets/images/slider-2.jpg')}}" alt="slide-2" class="img-responsive">
+                    <div class="slider-desc">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="slide-offers-left">
+    {{--                                    <div class="slide-offers-title"><span>50% Price cut</span><br/>for online order</div>--}}
+    {{--                                    <p>New & Fashion collection<br/>arrival in believe store</p>--}}
+    {{--                                    <a href="{{route('frontend.cloth')}}" class="btn btn-blue">Shop now</a>--}}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
                                 </div>
                             </div>
                         </div>
@@ -115,38 +87,107 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="newest">
         <div class="container">
-            <div class="newest-content">
-                <div class="newest-tab">
+            <div class="home-content">
+                <div class="cat-offers">
                     <div class="row">
-                        <ul id="myTab" class="nav nav-tabs newest" role="tablist">
-                            <li role="presentation" class="active">
-                                <a href="#1" id="cat-1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">Featured</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#2" role="tab" id="cat-2" data-toggle="tab" aria-controls="2">New Arrivals</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#3" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Best Seller</a>
-                            </li>
-                        </ul>
+                        <div class="col-md-4">
+                            <div class="cat-sec-2">
+                                <img src="{{asset('assets/images/home/men_photo4.png')}}" class="img-responsive" alt="">
+                                <div class="cat-desc">
+                                    <div class="cat-inner1">
+                                        <div class="cat-title">cloths<span class="cat-span">Clothing</span></div>
+                                        <a href="{{route('frontend.cloth')}}" class="btn btn-border">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat-sec-2">
+                                <img src="{{asset('assets/images/home/toys.jpg')}}" class="img-responsive" alt="">
+                                <div class="cat-desc">
+                                    <div class="cat-inner2">
+                                        <div class="custom">
+                                            <div class="cat-title">Toys<span class="cat-span">Food</span></div>
+                                            <a href="{{route('frontend.groceries')}}" class="btn btn-border">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat-sec-2">
+                                <img src="{{asset('assets/images/home/accessories.png')}}" class="img-responsive" alt="">
+                                <div class="cat-desc">
+                                    <div class="cat-inner">
+                                        <div class="cat-title">accessories<span class="cat-span">collections - 2020</span></div>
+                                        <a href="{{route('frontend.accessories')}}" class="btn btn-border">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="myTabContent" class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
-                            <div class="row">
-                                @foreach($products as $product)
-                                    @if($product->pf == 'featured')
-                                        @php
-                                            $f++;
+                </div>
+            </div>
+        </div>
+        <div class="newest">
+            <div class="container">
+                <div class="newest-content">
+                    <div class="newest-tab">
+                        <div class="row">
+                            <ul id="myTab" class="nav nav-tabs newest" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#1" id="cat-1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">Featured</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#2" role="tab" id="cat-2" data-toggle="tab" aria-controls="2">New Arrivals</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#3" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Best Seller</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
+                                <div class="row">
+                                    @foreach($products as $product)
+                                        @if($product->pf == 'featured')
+                                            @php
+                                                $f++;
                                         @endphp
                                         <div class="col-md-3 prdct-grid">
-                                            <div class="product-fade">
-                                                <div class="product-fade-wrap">
-                                                    <div id="product-image">
-                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
+                                            <div id="product-image">
+                                                <div class="contenedorCards">
+                                                    <div class="card">
+                                                        <div class="wrapper">
+                                                            <div class="colorProd"></div>
+                                                            <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
+                                                            <div class="infoProd">
+                                                                <p class="nombreProd">{{$product->title}}</p>
+                                                                <div class="actions">
+                                                                    <div class="preciosGrupo">
+                                                                        <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>
+                                                                        <p class="precio precioProd">৳{{$product->new_price}}</p>
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action aFavs">
+                                                                        <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action alCarrito">
+                                                                        <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
+                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+{{--                                            <div class="product-fade">--}}
+{{--                                                <div class="product-fade-wrap">--}}
+{{--                                                    <div id="product-image">--}}
+{{--                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>--}}
+{{--                                                    </div>--}}
 {{--                                                    <div class="product-fade-ct">--}}
 {{--                                                        <div class="product-fade-control">--}}
 {{--                                                            <div class="to-left">--}}
@@ -161,20 +202,20 @@
 {{--                                                            </a>--}}
 {{--                                                        </div>--}}
 {{--                                                    </div>--}}
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                    <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
-                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
-                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
-                                                </a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="">{{$product->title}}</a>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
-                                            </div>
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="row">--}}
+{{--                                                    <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">--}}
+{{--                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">--}}
+{{--                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-name">--}}
+{{--                                                <a href="">{{$product->title}}</a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}--}}
+{{--                                            </div>--}}
                                         </div>
                                         @if($f>=8)
                                             @break
@@ -195,11 +236,38 @@
                                     <div class="clearfix"></div>
                                     @foreach($products_f as $product)
                                         <div class="col-md-3 prdct-grid">
-                                            <div class="product-fade">
-                                                <div class="product-fade-wrap">
-                                                    <div id="product-image">
-                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
+                                            <div id="product-image">
+                                                <div class="contenedorCards">
+                                                    <div class="card">
+                                                        <div class="wrapper">
+                                                            <div class="colorProd"></div>
+                                                            <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
+                                                            <div class="infoProd">
+                                                                <p class="nombreProd">{{$product->title}}</p>
+                                                                <div class="actions">
+                                                                    <div class="preciosGrupo">
+                                                                        <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>
+                                                                        <p class="precio precioProd">৳{{$product->new_price}}</p>
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action aFavs">
+                                                                        <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action alCarrito">
+                                                                        <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
+                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+{{--                                            <div class="product-fade">--}}
+{{--                                                <div class="product-fade-wrap">--}}
+{{--                                                    <div id="product-image">--}}
+{{--                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>--}}
+{{--                                                    </div>--}}
 {{--                                                    <div class="product-fade-ct">--}}
 {{--                                                        <div class="product-fade-control">--}}
 {{--                                                            <div class="to-left">--}}
@@ -214,20 +282,20 @@
 {{--                                                            </a>--}}
 {{--                                                        </div>--}}
 {{--                                                    </div>--}}
-                                                </div>
-                                            </div>
-                                            <div class="row text-center">
-                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
-                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
-                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
-                                                </a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="">{{$product->title}}</a>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
-                                            </div>
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="row text-center">--}}
+{{--                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">--}}
+{{--                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">--}}
+{{--                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-name">--}}
+{{--                                                <a href="">{{$product->title}}</a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}--}}
+{{--                                            </div>--}}
                                         </div>
                                     @endforeach
                                     <div class="row" id="button_div">
@@ -249,11 +317,38 @@
                                             $n++;
                                         @endphp
                                         <div class="col-md-3 prdct-grid">
-                                            <div class="product-fade">
-                                                <div class="product-fade-wrap">
-                                                    <div id="product-image">
-                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category .'/'.$product->image)}}" alt="" class="img-responsive" id="product_img" title="Product Details"></a></div>
+                                            <div id="product-image">
+                                                <div class="contenedorCards">
+                                                    <div class="card">
+                                                        <div class="wrapper">
+                                                            <div class="colorProd"></div>
+                                                            <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
+                                                            <div class="infoProd">
+                                                                <p class="nombreProd">{{$product->title}}</p>
+                                                                <div class="actions">
+                                                                    <div class="preciosGrupo">
+                                                                        <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>
+                                                                        <p class="precio precioProd">৳{{$product->new_price}}</p>
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action aFavs">
+                                                                        <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                                    </div>
+                                                                    <div class="bakuretsu_icono action alCarrito">
+                                                                        <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
+                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+{{--                                            <div class="product-fade">--}}
+{{--                                                <div class="product-fade-wrap">--}}
+{{--                                                    <div id="product-image">--}}
+{{--                                                        <div class="item2"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category .'/'.$product->image)}}" alt="" class="img-responsive" id="product_img" title="Product Details"></a></div>--}}
+{{--                                                    </div>--}}
 {{--                                                    <div class="product-fade-ct">--}}
 {{--                                                        <div class="product-fade-control">--}}
 {{--                                                            <div class="to-left">--}}
@@ -268,20 +363,20 @@
 {{--                                                            </a>--}}
 {{--                                                        </div>--}}
 {{--                                                    </div>--}}
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
-                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
-                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
-                                                </a>
-                                            </div>
-                                            <div class="product-name">
-                                                {{$product->title}}
-                                            </div>
-                                            <div class="product-price">
-                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
-                                            </div>
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="row">--}}
+{{--                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">--}}
+{{--                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">--}}
+{{--                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-name">--}}
+{{--                                                {{$product->title}}--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}--}}
+{{--                                            </div>--}}
                                         </div>
                                         @if($n>=12)
                                             @break
@@ -301,7 +396,31 @@
 {{--                                            <div class="product-fade">--}}
 {{--                                                <div class="product-fade-wrap">--}}
                                                     <div id="product-image">
-                                                        <div class="item"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" id="product_img" class="img-responsive" title="Product Details"></a></div>
+                                                        <div class="contenedorCards">
+                                                            <div class="card">
+                                                                <div class="wrapper">
+                                                                    <div class="colorProd"></div>
+                                                                    <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
+                                                                    <div class="infoProd">
+                                                                        <p class="nombreProd">{{$product->title}}</p>
+                                                                        <div class="actions">
+                                                                            <div class="preciosGrupo">
+                                                                                <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>
+                                                                                <p class="precio precioProd">৳{{$product->new_price}}</p>
+                                                                            </div>
+                                                                            <div class="bakuretsu_icono action aFavs">
+                                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                                            </div>
+                                                                            <div class="bakuretsu_icono action alCarrito">
+                                                                                <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
+                                                                                    <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
 {{--                                                    <div class="product-fade-ct">--}}
 {{--                                                        <div class="product-fade-control">--}}
@@ -319,18 +438,18 @@
 {{--                                                    </div>--}}
 {{--                                                </div>--}}
 {{--                                            </div>--}}
-                                            <div class="row">
-                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">
-                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
-                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">
-                                                </a>
-                                            </div>
-                                            <div class="product-name">
-                                                <a href="">{{$product->title}}</a>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
-                                            </div>
+{{--                                            <div class="row">--}}
+{{--                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist" style="width: 50px">--}}
+{{--                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">--}}
+{{--                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="view_image" title="See More Details" style="width: 50px">--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-name">--}}
+{{--                                                <a href="">{{$product->title}}</a>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}--}}
+{{--                                            </div>--}}
                                         </div>
                                         @if($b>=12)
                                             @break
@@ -347,7 +466,7 @@
     <div class="content-offers img-responsive">
         <div class="container">
             <div class="ct-offers">
-                <div class="ct-offers-title">Dream Point<br>Women’s</div>
+                <div class="ct-offers-title">Tuba<br>Women’s</div>
                 <p>"What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language."  —Miuccia Prada</p>
                 <a href="{{route('frontend.women.cloth')}}" class="btn btn-blue">Discover more Product</a>
             </div>
@@ -359,7 +478,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     @if(!empty($offer))
-                        <img src="{{asset('assets/images/offers/'. $offer->image)}}" class="img-responsive" onclick="wishlist()" style="width: 945px; height: 270px;">
+                        <img src="{{asset('assets/images/offers/'. $offer->image)}}" class="img-responsive" onclick="wishlist()">
                     @endif
                 </div>
             </div>
@@ -387,15 +506,45 @@
                                 <div class="col">
                                     <div class="bbb_viewed_slider_container">
                                         <div class="owl-carousel owl-theme bbb_viewed_slider">
-                                            @foreach($products as $product)
-                                                @if(!empty($offer) && $product->offer == $offer->id)
-                                                    <div class="owl-item">
-                                                        <div class="{{--product-fade--}}">
-                                                            <div class="{{--product-fade-wrap--}}">
-                                                                <div id="product-image">
-                                                                    <div class="item"><a href="{{route('product_view', [$product->id])}}" class="" id=""><img src="{{asset('assets/images/products/'.$product->category . '/'.$product->image)}}" alt="" class="img-responsive" title="Product Details" style="width: 100%; cursor: pointer"></a></div>
+
+                                        @foreach($products as $product)
+                                           @if(!empty($offer) && $product->offer == $offer->id)
+                                            <div class="owl-item">
+                                                <div class="product-fade">
+                                                    <div class="product-fade-wrap">
+                                                        <div id="product-image">
+                                                            <div class="contenedorCards">
+                                                                <div class="card">
+                                                                    <div class="wrapper">
+                                                                        <div class="colorProd"></div>
+                                                                        <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
+                                                                        <div class="infoProd">
+                                                                            <p class="nombreProd">{{$product->title}}</p>
+{{--                                                                            <p class="extraInfo">Fecha de salida: 31/03/2021</p>--}}
+                                                                            <div class="actions">
+                                                                                <div class="preciosGrupo">
+                                                                                    <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>
+                                                                                    <p class="precio precioProd">৳{{$product->new_price}}</p>
+                                                                                </div>
+                                                                                <div class="bakuretsu_icono action aFavs">
+                                                                                    <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
+                                                                                </div>
+                                                                                <div class="bakuretsu_icono action alCarrito">
+                                                                                    <a href="{{route('add-cart', [$product->id])}}" class="caraousel_cart">
+                                                                                        <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="caraousel_cart" alt="bag" title="Add To Cart">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                @if($offer->duration > date('Y-m-d'))
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+{{--                                                                @if($offer->duration > date('Y-m-d'))--}}
 {{--                                                                <div class="product-fade-ct">--}}
 {{--                                                                    <div class="product-fade-control">--}}
 {{--                                                                        <div class="to-left">--}}
@@ -410,28 +559,28 @@
 {{--                                                                        </a>--}}
 {{--                                                                    </div>--}}
 {{--                                                                </div>--}}
-                                                                @endif
-                                                            </div>
-                                                        </div>
-                                                        @if($offer->duration > date('Y-m-d'))
-                                                        <div class="row text-center">
-                                                            <div class="col-md-6">
-                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="offer_wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist">
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">
-                                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="offer_view_image" title="See More Details">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        @endif
-                                                        <div class="product-name">
-                                                            <a href="">{{$product->title}}</a>
-                                                        </div>
-                                                        <div class="product-offer-price">
-                                                            <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}
-                                                        </div>
-                                                    </div>
+{{--                                                                @endif--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                        @if($offer->duration > date('Y-m-d'))--}}
+{{--                                                        <div class="row text-center">--}}
+{{--                                                            <div class="col-md-6">--}}
+{{--                                                                <img src="{{asset('assets/images/icon/like.png')}}" id="wishlist_cart" alt="pav" class="offer_wishlist_image" data-id="{{$product->id}}" title="Add To Wishlist">--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="col-md-6">--}}
+{{--                                                                <a href="{{route('product_view', [$product->id])}}" class="" id="">--}}
+{{--                                                                    <img src="{{asset('assets/images/icon/view.png')}}" id="" alt="bag" class="offer_view_image" title="See More Details">--}}
+{{--                                                                </a>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                        @endif--}}
+{{--                                                        <div class="product-name">--}}
+{{--                                                            <a href="">{{$product->title}}</a>--}}
+{{--                                                        </div>--}}
+{{--                                                        <div class="product-offer-price">--}}
+{{--                                                            <span>{{$product->prev_price ? '৳'.$product->prev_price : ''}}</span> ৳{{$product->new_price}}--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
                                                 @endif
                                             @endforeach
                                         </div>
@@ -448,55 +597,143 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12 wpld">
-                    <span class="why_people"><span class="span"></span><span class="span"></span>Why People<span class="span"></span></span>
-                    <span><img src="{{asset('assets/images/heart.png')}}" class="why_dreampoint_image"/></span>
-                    <span class="dream_point"><span class="span"></span>Dreampoint ?<span class="span"></span><span class="span"></span></span>
+                    <span class="why_people color"><span class="span"></span><span class="span"></span>Why We<span class="span"></span></span>
+                    <span><img src="{{asset('assets/images/heart.png')}}" class="why_Tuba_image"/></span>
+                    <span class="dream_point color"><span class="span"></span>Tuba ?<span class="span"></span><span class="span"></span></span>
                     <br/><br/><br/>
                 </div>
-                <div class="col-md-6"><img src="{{asset('assets/images/icon/tuba-logo.png')}}" class="img-responsive" id="dreampoint_logo" width="500px"></div>
-                <div class="col-md-6 about_us_text">We just love the thrill of shopping for new clothes & updating our wardrobes. On the flip side, fashion goes round in circles. Sometimes, if you hold onto something long enough, in a few years it might come back in fashion again.There’s so much choice, mixing, matching, updating, ways to be stand out & personally express yourself.Window shopping, it’s free & you can get so much outfit inspo ideas.I love following trends at designer shows and at retail. I’m fascinated by how trends start on the catwalks or on the street, and how they filter down to retail. I’m curious to compare retail fashion with street fashion. I’m fascinated by the power that we as consumers have to keep a trend alive, despite them being off-trend. I also enjoy seeing trends repeat themselves as the decades go by. It’s like a sport to me and definitely as much a leisure activity as it is part of my job.Dreampoint provides everything we need.Shopping on Dreampoint, the joy of not having to go out & find somewhere to park & shopping in your PJ’s with your feet up & a cup of tea or your favorite tipple whilst you do it!</div>
+                <div class="col-md-6"><img src="{{asset('assets/images/tuba_logo_GIF.gif')}}" class="img-responsive" id="Tuba_logo" width="100%"></div>
+                <div class="col-md-6 about_us_text color">We just love the thrill of shopping for new clothes & updating our wardrobes.On the flip side, fashion goes round in circles. Sometimes, if you hold onto something long enough, in a few years it might come back in fashion again.There’s so much choice, mixing, matching, updating, ways to be stand out & personally express yourself.Window shopping, it’s free & you can get so much outfit inspo ideas.I love following trends at designer shows and at retail. I’m fascinated by how trends start on the catwalks or on the street, and how they filter down to retail. I’m curious to compare retail fashion with street fashion. I’m fascinated by the power that we as consumers have to keep a trend alive, despite them being off-trend. I also enjoy seeing trends repeat themselves as the decades go by.</div>
             </div>
         </div>
     </div>
     <br/><br/>
     <div class="all_products">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="product_container">
-                    <img src="{{asset('assets/images/landing_page/woman_gallery.jpg')}}" class="product_image img-responsive" alt="" />
-                    <p class="title">Women Cloths</p>
-                    <div class="overlay"></div>
-                    <div class="button"><a href="{{route('frontend.women.cloth')}}"> Buy Now </a></div>
+{{--        <div class="row">--}}
+{{--            <div class="col-md-4">--}}
+{{--                <div class="product_container">--}}
+{{--                    <img src="{{asset('assets/images/landing_page/woman_gallery.jpg')}}" class="product_image img-responsive" alt="" />--}}
+{{--                    <p class="title">Women Cloths</p>--}}
+{{--                    <div class="overlay"></div>--}}
+{{--                    <div class="button"><a href="{{route('frontend.women.cloth')}}"> Buy Now </a></div>--}}
+{{--                </div>--}}
+{{--                <div class="product_container">--}}
+{{--                    <img src="{{asset('assets/images/landing_page/groceries_gallery.jpg')}}" class="product_image img-responsive" alt="" />--}}
+{{--                    <p class="title">Grocereis</p>--}}
+{{--                    <div class="overlay"></div>--}}
+{{--                    <div class="button"><a href="{{route('frontend.groceries')}}"> Buy Now </a></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-4">--}}
+{{--                <div class="product_container_man">--}}
+{{--                    <img src="{{asset('assets/images/landing_page/man_gallery.jpg')}}" class="product_image_man img-responsive" alt="" />--}}
+{{--                    <p class="title1">Men Cloths</p>--}}
+{{--                    <div class="overlay"></div>--}}
+{{--                    <div class="men_button"><a href="{{route('frontend.men.cloth')}}"> Buy Now </a></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-4">--}}
+{{--                <div class="product_container">--}}
+{{--                    <img src="{{asset('assets/images/landing_page/kids_gallery.jpg')}}" class="product_image img-responsive" alt="" />--}}
+{{--                    <p class="title">Kids Cloths</p>--}}
+{{--                    <div class="overlay"></div>--}}
+{{--                    <div class="button"><a href="{{route('frontend.kids.cloth')}}"> Buy Now </a></div>--}}
+{{--                </div>--}}
+{{--                <div class="product_container">--}}
+{{--                    <img src="{{asset('assets/images/landing_page/accessories_gallery.jpg')}}" class="product_image img-responsive" alt="" />--}}
+{{--                    <p class="title">Accessories</p>--}}
+{{--                    <div class="overlay"></div>--}}
+{{--                    <div class="button"><a href="{{route('frontend.accessories')}}"> Buy Now </a></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+        <div class="shell">
+            <div class="row">
+                <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                        <div class="wsk-cp-product">
+                            <div class="wsk-cp-img">
+                                <img src="{{asset('assets/images/tuba/grocery.jpg')}}" alt="Product" class="img-responsive" />
+                            </div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <span>Groceries</span>
+                                </div>
+                                <div class="title-product">
+                                    <h3>Fresh Food, Fresh Life</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <p>We Provide the best quality of fresh foods. You don't need to go out to find the organic and reliable foods for your family.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="wsk-cp-product">
+                            <div class="wsk-cp-img"><img src="{{asset('assets/images/tuba/woman.jpg')}}" alt="Product" class="img-responsive" /></div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <span>Women</span>
+                                </div>
+                                <div class="title-product">
+                                    <h3>Live life, Queen Size</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <p>Tuba provides the best design and comfort for your daily life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="wsk-cp-product">
+                            <div class="wsk-cp-img"><img src="{{asset('assets/images/tuba/man.jpg')}}" alt="Product" class="img-responsive" /></div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <span>Men</span>
+                                </div>
+                                <div class="title-product">
+                                    <h3>Fashion is equal to attitude</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <p>Tuba prefers your taste of style and provides according to that.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="wsk-cp-product">
+                            <div class="wsk-cp-img"><img src="{{asset('assets/images/tuba/kids.jpg')}}" alt="Product" class="img-responsive" /></div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <span>Kids</span>
+                                </div>
+                                <div class="title-product">
+                                    <h3>Kids + Fashion = Smart</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <p>Tuba's kids collection has more comfortable product for your kids with unique style.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="wsk-cp-product">
+                            <div class="wsk-cp-img"><img src="{{asset('assets/images/tuba/accessories.jpg')}}" alt="Product" class="img-responsive" /></div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <span>Accessories</span>
+                                </div>
+                                <div class="title-product">
+                                    <h3>Accessories are Fashion</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <p>Use tuba's latest collection of accessories to look even better.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-1"></div>
                 </div>
-                <div class="product_container">
-                    <img src="{{asset('assets/images/landing_page/groceries_gallery.jpg')}}" class="product_image img-responsive" alt="" />
-                    <p class="title">Grocereis</p>
-                    <div class="overlay"></div>
-                    <div class="button"><a href="{{route('frontend.groceries')}}"> Buy Now </a></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="product_container_man">
-                    <img src="{{asset('assets/images/landing_page/man_gallery.jpg')}}" class="product_image_man img-responsive" alt="" />
-                    <p class="title1">Men Cloths</p>
-                    <div class="overlay"></div>
-                    <div class="men_button"><a href="{{route('frontend.men.cloth')}}"> Buy Now </a></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="product_container">
-                    <img src="{{asset('assets/images/landing_page/kids_gallery.jpg')}}" class="product_image img-responsive" alt="" />
-                    <p class="title">Kids Cloths</p>
-                    <div class="overlay"></div>
-                    <div class="button"><a href="{{route('frontend.kids.cloth')}}"> Buy Now </a></div>
-                </div>
-                <div class="product_container">
-                    <img src="{{asset('assets/images/landing_page/accessories_gallery.jpg')}}" class="product_image img-responsive" alt="" />
-                    <p class="title">Accessories</p>
-                    <div class="overlay"></div>
-                    <div class="button"><a href="{{route('frontend.accessories')}}"> Buy Now </a></div>
-                </div>
-            </div>
         </div>
     </div>
     <br/><br/>
@@ -574,44 +811,44 @@
             <div class="delivery">
                 <div class="content-heading">
                     <div class="row">
-                        <h3 class="title_content_heading"><span>Delivery & Exchange</span></h3>
+                        <h3 class="title_content_heading"><span id="">Delivery & Exchange</span></h3>
                     </div>
                 </div>
-                <br/><br/>
+                <br/>
                 <div class="row text-center">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="row">
-                            <div class="col-md-4"><img src="{{asset('assets/images/icon/truck-icon.png')}}" id="truck_icon"></div>
+                            <div class="col-md-4"><img src="{{asset('assets/images/icon/truck.png')}}" id="truck_icon"></div>
                             <div class="col-md-8">
-                                <h4 id="truck_icon">FREE SHIPPING</h4>
-                                <p id="truck_icon">Buy BDT 3000+ &amp; Get Free Delivery</p>
+                                <h4 id="delivery">FREE SHIPPING</h4>
+                                <p id="delivery">Buy BDT 3000+ &amp; Get Free Delivery</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="row">
-                            <div class="col-md-3"><img src="{{asset('assets/images/icon/support-icon.png')}}"></div>
+                            <div class="col-md-3"><img src="{{asset('assets/images/icon/support.png')}}"></div>
                             <div class="col-md-9">
-                                <h4>Support</h4>
-                                <p>+880-1909040003<br/>info@dreamspointbd.com</p>
+                                <h4 id="delivery">Support</h4>
+                                <p id="delivery">+880-1722006599<br/>info@tubabd.xyz</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="row">
-                            <div class="col-md-3"><img src="{{asset('assets/images/icon/exchange-icon.png')}}"></div>
+                            <div class="col-md-3"><img src="{{asset('assets/images/icon/exchange.png')}}"></div>
                             <div class="col-md-9">
-                                <h4>7 Days Exchange</h4>
-                                <p>simply exchange it within 7 days for an exchange.</p>
+                                <h4 id="delivery">7 Days Exchange</h4>
+                                <p id="delivery">simply exchange it within 7 days for an exchange.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="row">
-                            <div class="col-md-3"><img src="{{asset('assets/images/icon/payment-secure-icon.png')}}"></div>
+                            <div class="col-md-3"><img src="{{asset('assets/images/icon/payment-security.png')}}"></div>
                             <div class="col-md-9">
-                                <h4>100% Payment Secure</h4>
-                                <p>Cash on delivery and secured online payment.</p>
+                                <h4 id="delivery">100% Payment Secure</h4>
+                                <p id="delivery">Cash on delivery and secured online payment.</p>
                             </div>
                         </div>
                     </div>
