@@ -1209,6 +1209,10 @@ section {
 .hr_3 {
     border-top: 2px dotted #a167c9;
 }
+.develop_design{
+    font-size: 15px;
+    color: #a167c9;
+}
 @media only screen and (max-width: 767px) {
     .navbar_top{
         display: none;

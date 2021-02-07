@@ -102,17 +102,6 @@ $j=0;
                         </div>
                     </div>
                 </div>
-{{--                <div class="col-md-4">--}}
-{{--                    <div class="wid-title text-center">Social Media</div>--}}
-{{--                    <div class="text-center">--}}
-{{--                        <a href="https://www.facebook.com/dreampointbd.xyz" target="_blank"><img src="{{asset('assets/images/icon/facebook.png')}}" class="social_icon"></a>--}}
-{{--                        <a href="https://www.pinterest.com/dreampointbd/_created/" target="_blank"><img src="{{asset('assets/images/icon/pinterest.png')}}" class="social_icon"></a>--}}
-{{--                        <a href="https://www.youtube.com/channel/UC-qxB2hi09-Af5luvd5v4vg" target="_blank"><img src="{{asset('assets/images/icon/youtube.png')}}" class="social_icon"></a>--}}
-{{--                        <a href="https://www.linkedin.com/company/dreampointbd" target="_blank"><img src="{{asset('assets/images/icon/linkedin.png')}}" class="social_icon"></a>--}}
-{{--                        <a href="https://www.instagram.com/dreampointbd/" target="_blank"><img src="{{asset('assets/images/icon/instagram.png')}}" class="social_icon"></a>--}}
-{{--                        <a href="https://twitter.com/DreamPointBang1" target="_blank"><img src="{{asset('assets/images/icon/twiter.png')}}" class="social_icon"></a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
                 <div class="col-md-4">
                     <div class="wid-title text-center">Pay With</div>
                     <img src="{{asset('assets/images/payment_method/pay-with.png')}}" width="100%">
@@ -121,7 +110,7 @@ $j=0;
             <br/>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><b>© Developed by <a href="http://setcolbd.com/" target="_blank" style="text-decoration: none;font-family: cursive;">:: Skies Engineering & Technologies Company Ltd. </a> All rights reserved.</b></p>
+                    <p class="develop_design"><b>© Developed by <a href="#"  target="_blank">Rijwan Chowdhury</a> All rights reserved.</b></p>
                 </div>
             </div>
         </div>
