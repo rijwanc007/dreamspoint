@@ -16,9 +16,11 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
+                    <div class="row text-center">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-8">
                     <div class="collapse navbar-collapse" id="cat-nav-mega">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown menu-large">There is nothing to show</li>
                             <li><a href="{{route('frontend.men.cloth')}}"> MEN </a></li>
                             <li class="dropdown menu-large active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WOMEN <i class="fa fa-angle-down"></i></a>
@@ -107,9 +109,9 @@
                             <li><a href="{{route('frontend.kids.cloth')}}">BABY & KIDS </a></li>
                             <li><a href="{{route('frontend.groceries')}}">GROCERIES </a></li>
                             <li><a href="{{route('frontend.accessories')}}">ACCESSORIES </a></li>
-                            <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
-                            <li class="cat-img-off"><img src="{{asset('assets/images/offers.png')}}" alt="off"></li>
                         </ul>
+                    </div>
+                        </div>
                     </div>
                 </nav>
             </div>
