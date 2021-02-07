@@ -13,20 +13,16 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="row text-center">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <div class="collapse navbar-collapse" id="cat-nav-mega">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="{{route('frontend.men.cloth')}}">MEN </a></li>
-                                    <li><a href="{{route('frontend.women.cloth')}}">WOMEN </a></li>
-                                    <li><a href="{{route('frontend.kids.cloth')}}">BABY & KIDS </a></li>
-                                    <li><a href="{{route('frontend.groceries')}}">GROCERIES </a></li>
-                                    <li><a href="{{route('frontend.accessories')}}">ACCESSORIES </a></li>
-                                    <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="collapse navbar-collapse" id="cat-nav-mega">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown menu-large li_color">There is nothing to show in here in</li>
+                            <li><a href="{{route('frontend.men.cloth')}}">MEN </a></li>
+                            <li><a href="{{route('frontend.women.cloth')}}">WOMEN </a></li>
+                            <li><a href="{{route('frontend.kids.cloth')}}">BABY & KIDS </a></li>
+                            <li><a href="{{route('frontend.groceries')}}">GROCERIES </a></li>
+                            <li><a href="{{route('frontend.accessories')}}">ACCESSORIES </a></li>
+                            <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -520,7 +516,6 @@
                                                                         <div class="imgProd" style="background-image: url({{asset('assets/images/products/'.$product->category . '/'.$product->image)}});"></div>
                                                                         <div class="infoProd">
                                                                             <p class="nombreProd">{{$product->title}}</p>
-{{--                                                                            <p class="extraInfo">Fecha de salida: 31/03/2021</p>--}}
                                                                             <div class="actions">
                                                                                 <div class="preciosGrupo">
                                                                                     <p class="precio precioOferta">{{$product->prev_price ? '৳'.$product->prev_price : ''}}</p>

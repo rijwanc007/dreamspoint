@@ -4127,7 +4127,7 @@ blockquote {
 }
 .mega-sub {
     float: left;
-    border-right: 1px dashed #66cef6;
+    border-right: 1px dashed #ba8cd7;
     margin-bottom: 20px;
     margin-top: 20px;
     max-width: 220px;
@@ -4188,12 +4188,12 @@ blockquote {
 }
 .mega-sub-title {
     font-size: 13px;
-    color: #66cef6;
+    color: #ba8cd7;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px;
     border: none;
-    border-bottom: 2px solid #66cef6;
+    border-bottom: 2px solid #ba8cd7;
     text-align: center;
 }
 #cat-nav .mega-product .prdct-grid {
@@ -4248,7 +4248,7 @@ blockquote {
     cursor: pointer;
 }
 .homepage-1 #cat-nav .mega-sub ul li a:hover {
-    color: #66cef6;
+    color: #ba8cd7;
     font-size: 20px;
 }
 .short-form {

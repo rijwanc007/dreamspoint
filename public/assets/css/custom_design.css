@@ -1213,6 +1213,9 @@ section {
     font-size: 15px;
     color: #a167c9;
 }
+.li_color{
+    color: #ba8cd7;
+}
 @media only screen and (max-width: 767px) {
     .navbar_top{
         display: none;
