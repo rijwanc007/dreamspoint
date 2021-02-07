@@ -40,8 +40,9 @@
     font-size: 18px;
     font-family: 'Raleway';
 }
-.cart_botom{
+.cart_bottom{
     width: 100%;
+    cursor:pointer;
 }
 .caraousel_cart{
     cursor: pointer;

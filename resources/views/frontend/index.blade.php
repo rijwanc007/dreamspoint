@@ -173,8 +173,8 @@
                                                                         <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
                                                                     </div>
                                                                     <div class="bakuretsu_icono action alCarrito">
-                                                                        <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
-                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                        <a href="{{route('product_view', [$product->id])}}" class="cart_bottom">
+                                                                            <img src="{{asset('assets/images/icon/view.png')}}" class="cart_bottom" alt="bag" title="Add To Cart">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -334,8 +334,8 @@
                                                                         <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
                                                                     </div>
                                                                     <div class="bakuretsu_icono action alCarrito">
-                                                                        <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
-                                                                            <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                        <a href="{{route('product_view', [$product->id])}}" class="cart_bottom">
+                                                                            <img src="{{asset('assets/images/icon/view.png')}}" class="cart_bottom" alt="bag" title="Add To Cart">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -412,8 +412,8 @@
                                                                                 <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
                                                                             </div>
                                                                             <div class="bakuretsu_icono action alCarrito">
-                                                                                <a href="{{route('add-cart', [$product->id])}}" class="cart_botom">
-                                                                                    <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="cart_botom" alt="bag" title="Add To Cart">
+                                                                                <a href="{{route('product_view', [$product->id])}}" class="cart_bottom">
+                                                                                    <img src="{{asset('assets/images/icon/view.png')}}" class="cart_bottom" alt="bag" title="Add To Cart">
                                                                                 </a>
                                                                             </div>
                                                                         </div>
@@ -530,8 +530,8 @@
                                                                                     <img src="{{asset('assets/images/icon/like.png')}}" id="caraousel_wishlist" alt="pav" class="wishlist_cart" data-id="{{$product->id}}" title="Add To Wishlist">
                                                                                 </div>
                                                                                 <div class="bakuretsu_icono action alCarrito">
-                                                                                    <a href="{{route('add-cart', [$product->id])}}" class="caraousel_cart">
-                                                                                        <img src="{{asset('assets/images/icon/favorite-cart.png')}}" class="caraousel_cart" alt="bag" title="Add To Cart">
+                                                                                    <a href="{{route('product_view', [$product->id])}}" class="cart_bottom">
+                                                                                        <img src="{{asset('assets/images/icon/view.png')}}" class="cart_bottom" alt="bag" title="Add To Cart">
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
