@@ -14,7 +14,7 @@
                         </button>
                     </div>
                     <div class="row text-center">
-                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
                         <div class="col-md-8">
                     <div class="collapse navbar-collapse" id="cat-nav-mega">
                         <ul class="nav navbar-nav">
@@ -81,6 +81,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li><a href="{{route('frontend.offer_zone')}}">OFFERS ZONE </a></li>
                         </ul>
                     </div>
                         </div>
