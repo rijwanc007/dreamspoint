@@ -37,7 +37,6 @@
             <div class="col-md-12 like_index"><a href="#" data-toggle="modal" data-target="#wishlist"><img src="{{asset('assets/images/icon/like.png')}}" alt="pav" class="wishlist" id="wishlist_header"> <span class="wishlist_content">{{0}}</span></a></div>
             <div class="col-md-12 cart_index"><a href="{{route('cart')}}"><img src="{{asset('assets/images/icon/favorite-cart.png')}}" alt="bag" class="wishlist"><span class="cart_content">৳0000000</span></a></div>
         </div>
-
         <div id="main-slider">
             <div id="home-slider" class="owl-carousel owl-theme">
                 <div class="item">
